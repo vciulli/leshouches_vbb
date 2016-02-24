@@ -1,3 +1,57 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{Gleisberg:2008ta}
+T.~Gleisberg, S.~H{\"o}che, F.~Krauss, M.~Sch\"{o}nherr, S.~Schumann,
+  F.~Siegert, and J.~Winter, {\em JHEP} {\bf 02} (2009) 007,
+  [\href{http://xxx.lanl.gov/abs/0811.4622}{{\tt 0811.4622}}].
+
+\bibitem{Frixione:2002ik}
+S.~Frixione and B.~R. Webber, {\em JHEP} {\bf 06} (2002) 029,
+  [\href{http://xxx.lanl.gov/abs/hep-ph/0204244}{{\tt hep-ph/0204244}}].
+
+\bibitem{Hoeche:2011fd}
+S.~Hoeche, F.~Krauss, M.~Schonherr, and F.~Siegert, {\em JHEP} {\bf 09} (2012)
+  049, [\href{http://xxx.lanl.gov/abs/1111.1220}{{\tt 1111.1220}}].
+
+\bibitem{Catani:2001cc}
+S.~Catani, F.~Krauss, R.~Kuhn, and B.~R. Webber, {\em JHEP} {\bf 11} (2001)
+  063, [\href{http://xxx.lanl.gov/abs/hep-ph/0109231}{{\tt hep-ph/0109231}}].
+
+\bibitem{Schumann:2007mg}
+S.~Schumann and F.~Krauss, {\em JHEP} {\bf 03} (2008) 038,
+  [\href{http://xxx.lanl.gov/abs/0709.1027}{{\tt 0709.1027}}].
+
+\bibitem{Hoeche:2012yf}
+S.~Hoeche, F.~Krauss, M.~Schonherr, and F.~Siegert, {\em JHEP} {\bf 1304}
+  (2013) 027, [\href{http://xxx.lanl.gov/abs/1207.5030}{{\tt 1207.5030}}].
+
+\bibitem{Krauss:2001iv}
+F.~Krauss, R.~Kuhn, and G.~Soff, {\em JHEP} {\bf 02} (2002) 044,
+  [\href{http://xxx.lanl.gov/abs/hep-ph/0109036}{{\tt hep-ph/0109036}}].
+
+\bibitem{Gleisberg:2008fv}
+T.~Gleisberg and S.~H{\"o}che, {\em JHEP} {\bf 12} (2008) 039,
+  [\href{http://xxx.lanl.gov/abs/0808.3674}{{\tt 0808.3674}}].
+
+\bibitem{Gleisberg:2007md}
+T.~Gleisberg and F.~Krauss, {\em Eur. Phys. J.} {\bf C53} (2008) 501--523,
+  [\href{http://xxx.lanl.gov/abs/0709.2881}{{\tt 0709.2881}}].
+
+\bibitem{Catani:1996vz}
+S.~Catani and M.~H. Seymour, {\em Nucl. Phys.} {\bf B485} (1997) 291--419,
+  [\href{http://xxx.lanl.gov/abs/hep-ph/9605323}{{\tt hep-ph/9605323}}].
+
+\bibitem{Catani:2002hc}
+S.~Catani, S.~Dittmaier, M.~H. Seymour, and Z.~Trocsanyi, {\em Nucl. Phys.}
+  {\bf B627} (2002) 189--265,
+  [\href{http://xxx.lanl.gov/abs/hep-ph/0201036}{{\tt hep-ph/0201036}}].
+
+\bibitem{Cascioli:2011va}
+F.~Cascioli, P.~Maierhofer, and S.~Pozzorini, {\em Phys. Rev. Lett.} {\bf 108}
+  (2012) 111601, [\href{http://xxx.lanl.gov/abs/1111.5206}{{\tt 1111.5206}}].
+
+\bibitem{Cascioli:2014wya}
+F.~Cascioli, S.~HÃ¶che, F.~Krauss, P.~MaierhÃ¶fer, S.~Pozzorini, and
+  F.~Siegert, {\em J. Phys. Conf. Ser.} {\bf 523} (2014) 012058.
 
 \end{thebibliography}\endgroup
