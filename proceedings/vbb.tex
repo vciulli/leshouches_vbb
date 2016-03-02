@@ -9,6 +9,11 @@
 \newcommand{\MEPSatNLO}{M\scalebox{0.8}{E}P\scalebox{0.8}{S}@N\protect\scalebox{0.8}{LO}\xspace}
 \newcommand{\Collier}{C\protect\scalebox{0.8}{OLLIER}\xspace}
 \newcommand{\OpenLoops}{O\protect\scalebox{0.8}{PEN}L\protect\scalebox{0.8}{OOPS}\xspace}
+\newcommand{\Herwig}{H\protect\scalebox{0.8}{ERWIG}7\xspace}
+\newcommand{\Matchbox}{M\protect\scalebox{0.8}{ATCHBOX}\xspace}
+\newcommand{\MadGraph}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH}\xspace}
+\newcommand{\CVolver}{CV\protect\scalebox{0.8}{OLVER}\xspace}
+\newcommand{\ColorFull}{C\protect\scalebox{0.8}{OLOR}F\protect\scalebox{0.8}{ULL}\xspace}
 
 \begin{document}
 
@@ -73,7 +78,62 @@ employed with the difference that for $g\to b\bar{b}$ splittings the invariant
 mass of the $b\bar{b}$ pair, instead of their transverse momentum, is being used as scale.
 NLO matrix elements are instead obtained from \OpenLoops~\cite{Cascioli:2011va}\cite{Cascioli:2014wya}
 
-\subsection{Z+b(b) production}
+\subsubsection{Results with \Herwig}
+In this section we present the setup for those results obtained with the \Herwig event generator~\cite{Bellm:2015jjp,Bahr:2008pv}.
+
+Based on extensions of the previously developed \Matchbox module~\cite{Platzer:2011bc},
+\Herwig facilitates the automated setup of all ingredients necessary for a full NLO QCD calculation in the subtraction formalism:
+an implementation of the Catani--Seymour dipole subtraction method~\cite{Catani:1996vz,Catani:2002hc},
+as well as interfaces to a list of external matrix--element providers --
+either at the level of squared matrix elements, based on extensions of the BLHA standard~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa},
+or at the level of color--ordered subamplitudes,
+where the color bases are provided by an interface to the \ColorFull~\cite{Sjodahl:2014opa} and \CVolver~\cite{Platzer:2013fha} libraries.
+
+For this study the relevant tree--level matrix elements are provided by \MadGraph~\cite{Alwall:2011uj,Alwall:2014hca}
+(at the level of color--ordered subamplitudes),
+whereas the relevant tree--level/one--loop interference terms are provided by \OpenLoops~\cite{Cascioli:2011va,Cascioli:2014wya}
+(at the level of squared matrix elements). 
+
+Fully automated NLO matching algorithms are available,
+henceforth referred to as subtractive (NLO$\oplus$) and multiplicative (NLO$\otimes$) matching
+-- based on the MC@NLO~\cite{Frixione:2002ik} and Powheg~\cite{Nason:2004rx} formalism respectively --
+for the systematic and consistent combination of NLO QCD calculations with both shower variants~\cite{Gieseke:2003rz,Platzer:2009jq} in \Herwig.
+
+We consider four different classes of samples, for varying combinations of matching and shower algorithms
+(a selection of plots can be found in sections \ref{sec:ZHerwig} and \ref{sec:WHerwig}):
+\begin{itemize}
+\item[4F, Wbb] For this set we consider the subtractive and multiplicative matching
+together with the $\tilde{q}$ shower.
+The core tree--level process in this case is $jj' \to W b\bar{b} \to l \nu_l b\bar{b}$,
+where $l \in \{e^+, e^-, \mu^+, \mu^-\}$ and $\nu_l$ the associated neutrino.
+In a four--flavour scheme the $b$ quark is typically considered massive
+and $j,j'$ can only consist of light quarks or a gluon, not a $b$ quark.
+\item[4F, Zbb] For this set we consider the subtractive and multiplicative matching
+together with the $\tilde{q}$ shower.
+The core tree--level process in this case is $jj \to Z b\bar{b} \to l^+ l^- b\bar{b}$,
+where $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
+In a four--flavour scheme the $b$ quark is typically considered massive
+and $j$ can only consist of light quarks or a gluon, not a $b$ quark.
+\item[5F, Zbb] For this set we consider the subtractive and multiplicative matching
+together with the $\tilde{q}$ and dipole shower.
+The core tree--level process in this case is $jj \to Z b\bar{b} \to l^+ l^- b\bar{b}$,
+where $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
+In a five--flavour scheme the $b$ quark is treated as massless,
+and $j$ may also include a $b$ quark.
+Generator--level cuts on the $b$ quarks have thus been applied.
+Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed massive.
+\item[5F, Zb] For this set we consider the subtractive and multiplicative matching
+together with the $\tilde{q}$ and dipole shower.
+The core tree--level process in this case is $jj_b \to Z j_b \to l^+ l^- j_b$,
+where $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
+In a five--flavour scheme the $b$ quark is treated as massless.
+For single $b$--quark production $j$ must not include a $b$ quark, but $j_b \in \{b,\bar{b}\}$.
+Generator--level cuts on the $b$ quark have thus been applied.
+Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed massive.
+\end{itemize}
+
+
+\subsection{Z+b(b) production with \Sherpa}
 \begin{figure}[htbp]
    \includegraphics[scale=0.5]{figs/zbb/d03-x01-y01.pdf} 
    \includegraphics[scale=0.5]{figs/zbb/d23-x01-y01.pdf} 
@@ -100,7 +160,7 @@ NLO matrix elements are instead obtained from \OpenLoops~\cite{Cascioli:2011va}\
    \includegraphics[scale=0.5]{figs/zbb/d13-x01-y01_rescaled.pdf} 
 \end{figure}
 
-\subsection{W+b production}
+\subsection{W+b production with \Sherpa}
 \begin{figure}[htbp]
    \includegraphics[scale=0.5]{figs/wbb/d01-x01-y01.pdf}
 \end{figure}
@@ -110,9 +170,22 @@ NLO matrix elements are instead obtained from \OpenLoops~\cite{Cascioli:2011va}\
    \includegraphics[scale=0.5]{figs/wbb/d02-x02-y01.pdf}
 \end{figure}
 
+\subsection{Z+b(b) production with \Herwig}
+\label{sec:ZHerwig}
+
+\subsubsection{Z+b, 5F}
+
+\subsubsection{Z+bb, 5F}
+
+\subsubsection{Z+bb, 4F}
+
+\subsection{W+bb production with \Herwig}
+\label{sec:WHerwig}
+
+\subsubsection{W+bb, 4F}
 
 \subsection{Conclusions}
 
-\bibliography{Vbb}
+\bibliography{vbb}
 
 \end{document}
