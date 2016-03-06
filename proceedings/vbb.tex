@@ -14,6 +14,7 @@
 \newcommand{\MadGraph}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH}\xspace}
 \newcommand{\CVolver}{CV\protect\scalebox{0.8}{OLVER}\xspace}
 \newcommand{\ColorFull}{C\protect\scalebox{0.8}{OLOR}F\protect\scalebox{0.8}{ULL}\xspace}
+\newcommand{\pt}{\ensuremath{p_{T}}\xspace}
 
 \begin{document}
 
@@ -24,6 +25,32 @@
     C.~Oleari, S.~Platzer, C.~Reuschle, B.~Waugh, ... }}
 
 \subsection{Introduction}
+
+
+
+\subsection{Rivet Routines}
+
+Results in this study were produced using three Rivet routines to compare to published ATLAS and CMS data.
+
+\begin{itemize}
+\item Measurement of differential production cross-sections for a $Z$\ boson in association with b-jets in proton-proton collisions at $\sqrt{s} = 7$~TeV with the ATLAS detector~\cite{Aad:2014dvb} (Rivet routine Rivet routine ATLAS\_2014\_I1306294). A pair of opposite sign charge dressed leptons\footnote{Leptons are dressed by adding the four-vectors of all photons within $\Delta R<0.1$\ to the lepton 4-vector} (i.e. electrons or muons) with $\pt>20$~GeV and $|\eta|<2.5$ are required, with a dilepton mass between 76 and 106~GeV. Anti-k$_{t}$\ 0.4 jets are reconstructed from all final state particles, and required to have $\pt>$20~GeV, $|y|<2.4$ and not overlap with the leptons used to make the $Z$~candidate ($\Delta R(jet, l)> 0.5$). Jets are labelled as $b$-jets based on matching with $\Delta  R<0.3$ to a weakly decaying $b$-hadron with $\pt>5$~GeV.
+
+  Distributions include the \pt and rapidity of $b$-jets and of the $Z$-boson, and for each $b$-jet, the $y_{boost}$ of the $b$-jet and $Z$. For events with $Z \pt>20$~GeV, the $\Delta R, \Delta\phi$, and $\Delta y$\ between the $Z$ and all $b$-jets are plotted. For events with at least two $b$-jets, the $\Delta R$\ and di-$b$-jet mass for the two leading $b$-jets, along with the $Z$ \pt and rapidity are plotted.
+
+  For this study, further distributions were added: the \pt of all weakly decaying $b$ hadrons with $|y|<2.7$, and the \pt of the subset of those that are matched to a jet. For $b$-jets, the number of matching $b$-hadrons, and the jet \pt for jets with one or two matching $b$-hadrons are plotted, all  with and without the 5~GeV requirement on $b$-hadron \pt. Finally the ratio of the number of jets matching one to those matching two $b$-hadrons is plotted as a function of jet \pt. All of these additional distributions are also formed using $b$-quarks instead of $b$-hadrons. 
+  
+\item Measurement of the cross-section for W boson production in association with b-jets in pp collisions at $\sqrt{s} = 7$~ TeV with the ATLAS detector~\cite{Aad:2013vka} (Rivet routine ATLAS\_2013\_I1219109). A dressed lepton with $\pt>25$~GeV and $|\eta|<2.5$\ and a same-flavour neutrino with $\pt>25$~GeV are used to form a $W$~candidate, which is required to have a transverse mass greater than $60$~GeV. Anti-k$_{t}$\ 0.4 jets are reconstructed from all final state particles, and required to have $\pt>$25~GeV, $|y|<2.1$ and not overlap with the charged lepton used to make the $W$~candidate ($\Delta R(jet, l)> 0.5$). Events with more than two selected jets are vetoed, and the at least one of the selected jets is required to be labelled as $b$-jet, based on matching with $\Delta  R<0.3$ to a weakly decaying $b$-hadron with $\pt>5$~GeV.
+
+  Distributions include the number of $b$-jets, and the $b$-jet \pt in events containing exactly one or two selected jets. The same additional distributions form the $Z$ analysis are also added to this analysis.
+  
+\item Cross-section and angular correlations in $Z$ boson with b-hadrons events at $\sqrt{s} = 7$ TeV~\cite{Chatrchyan:2013zja} (Rivet routine CMS\_2013\_i1256943). A pair of opposite sign charge dressed lepton with $\pt>20$~GeV and $|\eta|<2.4$ are required, with dilepton mass between 81 and 101~GeV. Exactly two weakly decaying b-hadrons with $\pt>15$~GeV and $|\eta|<2$\ are then required.
+
+  Distributions include the $Z$\ \pt, the $\Delta R$\ and $\Delta\phi$\ between $b$-hadrons, $\Delta R$\ between the $Z$ and closest $b$-hadron, and the asymmetry of the $\Delta R$\ between the $Z$ and closest $b$-hadron, and the $Z$\ and the furthest $b$-hadron. The angular distributions are repeated with a requirement of $Z$\ $\pt>50$~GeV.
+
+
+\end{itemize}
+
+
 
 \subsection{Event generators}
 
