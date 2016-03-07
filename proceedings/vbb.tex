@@ -26,9 +26,37 @@
 
 \subsection{Introduction}
 
+The vector boson production in association with one and two b jets at the CERN Large Hadron Collider is important for
+many different experimental and theoretical reasons. Bottom quarks have a peculiar signature which allows one to easily
+identify them thanks to a displaced decay vertex. The associated production with vector bosons is an important
+backgrounds to VH production with the Higgs boson decaying to b quarks, and many new physics searches. Theoretically,
+it offers an interesting testing ground for predictions involving heavy quarks. 
+
+There are two possible options for the
+calculation of processes with b-quarks in the final state at hadron colliders. In the four-flavour scheme (4F) b-quarks
+are not present in the parton density of the incident protons. They can only be generated in the final state. Usually in
+this approach the b-quark is massive. In the five-flavour scheme (5F) instead the bottom quark mass is considered small with
+respect to the scale of the process $Q$ and logarithms of the type $log^m\frac{Q^2}{m_b^2}$ are resummed into a b parton
+density function. In most case, in this approach the b-quark is considered massless, though higher order mass effects
+can be included in the calculation. A critical review of the different flavour number schemes and of the
+status of theoretical calculations is available in Ref.~\cite{Maltoni:2012pa}. The two approach gives identical results
+to all orders in perturbation theory, but results can be different at any finite order. In the 4F scheme the computation
+is more complicate, but the full kinematics of the heavy quarks is taken into account. Furthermore it can be easily
+interfaced to parton showers, even at NLO using the \MCatNLO~\cite{Frixione:2002ik} or the Powheg~\cite{Nason:2004rx} formalisms. 
+On the other hand logarithms in the initial state are not resummed and could lead to large discrepancies in the
+inclusive quantities like the total cross-section. In the 5F approach, on the opposite, calculations for the inclusive
+quantities are highly simplified and generally more accurate, but differential distributions and exclusive observables are
+technically more involved. 
+
+The goal of this study is to compare the most recent measurements with the predictions of the state of the art
+generators using 4F and 5F scheme. The report is organised as follows. In Section \ref{rivet} we provide a short
+description of the ATLAS and CMS measurements for $V+b+X$ and $V+b\bar{b}+X$, where $V$ is a $Z$ or a $W$ boson,
+available in the Rivet framework. In Section \ref{generators} we describe the generator setups used to obtain the
+predictions, which are compared to the measurements in Section \ref{Zbb} for the $Z$ and \ref{Wbb} for the $W$, before
+conclusions are drawn in Section \ref{concl}.   
 
 
-\subsection{Rivet Routines}
+\subsection{Rivet Routines \label{rivet}}
 
 Results in this study were produced using three Rivet routines to compare to published ATLAS and CMS data.
 
@@ -52,7 +80,7 @@ Results in this study were produced using three Rivet routines to compare to pub
 
 
 
-\subsection{Event generators}
+\subsection{Event generators \label{generators}}
 
 \subsubsection{Results with \protect\Sherpa }
 In this section we present results obtain with the \Sherpa event generator~\cite{Gleisberg:2008ta}. In particular we consider three different classes of samples: 4F~\MCatNLO, 5F~\MEPS and a 5F~\MEPSatNLO one.
@@ -159,8 +187,8 @@ Generator--level cuts on the $b$ quark have thus been applied.
 Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed massive.
 \end{itemize}
 
-
-\subsection{Z+b(b) production with \Sherpa}
+\subsection{Z+b(b) production \label{Zbb}}
+\subsubsection{Z+b(b) production with \Sherpa}
 \begin{figure}[htbp]
    \includegraphics[scale=0.5]{figs/zbb/d03-x01-y01.pdf} 
    \includegraphics[scale=0.5]{figs/zbb/d23-x01-y01.pdf} 
@@ -187,7 +215,21 @@ Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed 
    \includegraphics[scale=0.5]{figs/zbb/d13-x01-y01_rescaled.pdf} 
 \end{figure}
 
-\subsection{W+b production with \Sherpa}
+\subsubsection{Z+b(b) production with \Herwig}
+\label{sec:ZHerwig}
+
+\subsubsection{Z+b, 5F}
+
+\subsubsection{Z+bb, 5F}
+
+\subsubsection{Z+bb, 4F}
+
+\subsection{W+b production \label{Wbb}}
+
+\subsubsection{W+b production with \Sherpa}
+
+\subsubsection{W+bb with Powheg}
+
 \begin{figure}[htbp]
    \includegraphics[scale=0.5]{figs/wbb/d01-x01-y01.pdf}
 \end{figure}
@@ -197,21 +239,11 @@ Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed 
    \includegraphics[scale=0.5]{figs/wbb/d02-x02-y01.pdf}
 \end{figure}
 
-\subsection{Z+b(b) production with \Herwig}
-\label{sec:ZHerwig}
-
-\subsubsection{Z+b, 5F}
-
-\subsubsection{Z+bb, 5F}
-
-\subsubsection{Z+bb, 4F}
-
-\subsection{W+bb production with \Herwig}
+\subsubsection{W+bb production with \Herwig}
 \label{sec:WHerwig}
 
-\subsubsection{W+bb, 4F}
 
-\subsection{Conclusions}
+\subsection{Conclusions \label{concl}}
 
 \bibliography{vbb}
 

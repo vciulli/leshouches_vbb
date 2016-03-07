@@ -1,13 +1,34 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
-\bibitem{Gleisberg:2008ta}
-T.~Gleisberg, S.~H{\"o}che, F.~Krauss, M.~Sch\"{o}nherr, S.~Schumann,
-  F.~Siegert, and J.~Winter, {\em JHEP} {\bf 02} (2009) 007,
-  [\href{http://xxx.lanl.gov/abs/0811.4622}{{\tt 0811.4622}}].
+\bibitem{Maltoni:2012pa}
+F.~Maltoni, G.~Ridolfi, and M.~Ubiali, {\em JHEP} {\bf 07} (2012) 022,
+  [\href{http://xxx.lanl.gov/abs/1203.6393}{{\tt 1203.6393}}]. [Erratum:
+  JHEP04,095(2013)].
 
 \bibitem{Frixione:2002ik}
 S.~Frixione and B.~R. Webber, {\em JHEP} {\bf 06} (2002) 029,
   [\href{http://xxx.lanl.gov/abs/hep-ph/0204244}{{\tt hep-ph/0204244}}].
+
+\bibitem{Nason:2004rx}
+P.~Nason, {\em JHEP} {\bf 11} (2004) 040,
+  [\href{http://xxx.lanl.gov/abs/hep-ph/0409146}{{\tt hep-ph/0409146}}].
+
+\bibitem{Aad:2014dvb}
+G.~Aad {\em et.~al.},, {\bf ATLAS} Collaboration {\em JHEP} {\bf 10} (2014)
+  141, [\href{http://xxx.lanl.gov/abs/1407.3643}{{\tt 1407.3643}}].
+
+\bibitem{Aad:2013vka}
+G.~Aad {\em et.~al.},, {\bf ATLAS} Collaboration {\em JHEP} {\bf 06} (2013)
+  084, [\href{http://xxx.lanl.gov/abs/1302.2929}{{\tt 1302.2929}}].
+
+\bibitem{Chatrchyan:2013zja}
+S.~Chatrchyan {\em et.~al.},, {\bf CMS} Collaboration {\em JHEP} {\bf 12}
+  (2013) 039, [\href{http://xxx.lanl.gov/abs/1310.1349}{{\tt 1310.1349}}].
+
+\bibitem{Gleisberg:2008ta}
+T.~Gleisberg, S.~H{\"o}che, F.~Krauss, M.~Sch\"{o}nherr, S.~Schumann,
+  F.~Siegert, and J.~Winter, {\em JHEP} {\bf 02} (2009) 007,
+  [\href{http://xxx.lanl.gov/abs/0811.4622}{{\tt 0811.4622}}].
 
 \bibitem{Hoeche:2011fd}
 S.~Hoeche, F.~Krauss, M.~Schonherr, and F.~Siegert, {\em JHEP} {\bf 09} (2012)
@@ -53,5 +74,56 @@ F.~Cascioli, P.~Maierhofer, and S.~Pozzorini, {\em Phys. Rev. Lett.} {\bf 108}
 \bibitem{Cascioli:2014wya}
 F.~Cascioli, S.~HÃ¶che, F.~Krauss, P.~MaierhÃ¶fer, S.~Pozzorini, and
   F.~Siegert, {\em J. Phys. Conf. Ser.} {\bf 523} (2014) 012058.
+
+\bibitem{Bellm:2015jjp}
+J.~Bellm {\em et.~al.}, \href{http://xxx.lanl.gov/abs/1512.01178}{{\tt
+  1512.01178}}.
+
+\bibitem{Bahr:2008pv}
+M.~Bahr {\em et.~al.}, {\em Eur. Phys. J.} {\bf C58} (2008) 639--707,
+  [\href{http://xxx.lanl.gov/abs/0803.0883}{{\tt 0803.0883}}].
+
+\bibitem{Platzer:2011bc}
+S.~Platzer and S.~Gieseke, {\em Eur. Phys. J.} {\bf C72} (2012) 2187,
+  [\href{http://xxx.lanl.gov/abs/1109.6256}{{\tt 1109.6256}}].
+
+\bibitem{Binoth:2010xt}
+T.~Binoth {\em et.~al.}, {\em Comput. Phys. Commun.} {\bf 181} (2010)
+  1612--1622, [\href{http://xxx.lanl.gov/abs/1001.1307}{{\tt 1001.1307}}].
+  [,1(2010)].
+
+\bibitem{Alioli:2013nda}
+S.~Alioli {\em et.~al.}, {\em Comput. Phys. Commun.} {\bf 185} (2014) 560--571,
+  [\href{http://xxx.lanl.gov/abs/1308.3462}{{\tt 1308.3462}}].
+
+\bibitem{Andersen:2014efa}
+J.~R. Andersen {\em et.~al.}, \href{http://xxx.lanl.gov/abs/1405.1067}{{\tt
+  1405.1067}}.
+
+\bibitem{Sjodahl:2014opa}
+M.~Sjodahl, {\em Eur. Phys. J.} {\bf C75} (2015), no.~5 236,
+  [\href{http://xxx.lanl.gov/abs/1412.3967}{{\tt 1412.3967}}].
+
+\bibitem{Platzer:2013fha}
+S.~Plätzer, {\em Eur. Phys. J.} {\bf C74} (2014), no.~6 2907,
+  [\href{http://xxx.lanl.gov/abs/1312.2448}{{\tt 1312.2448}}].
+
+\bibitem{Alwall:2011uj}
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, {\em JHEP}
+  {\bf 06} (2011) 128, [\href{http://xxx.lanl.gov/abs/1106.0522}{{\tt
+  1106.0522}}].
+
+\bibitem{Alwall:2014hca}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
+  H.~S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro, {\em JHEP} {\bf 07} (2014)
+  079, [\href{http://xxx.lanl.gov/abs/1405.0301}{{\tt 1405.0301}}].
+
+\bibitem{Gieseke:2003rz}
+S.~Gieseke, P.~Stephens, and B.~Webber, {\em JHEP} {\bf 12} (2003) 045,
+  [\href{http://xxx.lanl.gov/abs/hep-ph/0310083}{{\tt hep-ph/0310083}}].
+
+\bibitem{Platzer:2009jq}
+S.~Platzer and S.~Gieseke, {\em JHEP} {\bf 01} (2011) 024,
+  [\href{http://xxx.lanl.gov/abs/0909.5593}{{\tt 0909.5593}}].
 
 \end{thebibliography}\endgroup
