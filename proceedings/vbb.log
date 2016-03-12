@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.11)  7 MAR 2016 01:02
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.11)  12 MAR 2016 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -182,120 +182,326 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
  [1
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figs/zbb/d03-x01-y01.pdf, id=21, 337.16966pt x 304.4474pt>
-File: figs/zbb/d03-x01-y01.pdf Graphic file (type pdf)
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-<use figs/zbb/d03-x01-y01.pdf>
-Package pdftex.def Info: figs/zbb/d03-x01-y01.pdf used on input line 193.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<figs/zbb/sherpa/d03-x01-y01.pdf, id=25, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d03-x01-y01.pdf Graphic file (type pdf)
 
-<figs/zbb/d23-x01-y01.pdf, id=22, 337.16966pt x 304.4474pt>
-File: figs/zbb/d23-x01-y01.pdf Graphic file (type pdf)
+<use figs/zbb/sherpa/d03-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d03-x01-y01.pdf used on input line 242
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<use figs/zbb/d23-x01-y01.pdf>
-Package pdftex.def Info: figs/zbb/d23-x01-y01.pdf used on input line 194.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
- [3]
-<figs/zbb/d15-x01-y01.pdf, id=27, 337.16966pt x 304.4474pt>
-File: figs/zbb/d15-x01-y01.pdf Graphic file (type pdf)
+<figs/zbb/sherpa/d23-x01-y01.pdf, id=26, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d23-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d15-x01-y01.pdf>
-Package pdftex.def Info: figs/zbb/d15-x01-y01.pdf used on input line 197.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/sherpa/d23-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d23-x01-y01.pdf used on input line 243
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d25-x01-y01.pdf, id=28, 337.16966pt x 304.4474pt>
-File: figs/zbb/d25-x01-y01.pdf Graphic file (type pdf)
+<figs/zbb/sherpa/d15-x01-y01.pdf, id=27, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d15-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d25-x01-y01.pdf>
-Package pdftex.def Info: figs/zbb/d25-x01-y01.pdf used on input line 198.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/sherpa/d15-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d15-x01-y01.pdf used on input line 244
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d01-x01-y01.pdf, id=29, 337.16966pt x 304.4474pt>
-File: figs/zbb/d01-x01-y01.pdf Graphic file (type pdf)
+<figs/zbb/sherpa/d25-x01-y01.pdf, id=28, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d25-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d01-x01-y01.pdf>
-Package pdftex.def Info: figs/zbb/d01-x01-y01.pdf used on input line 201.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/sherpa/d25-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d25-x01-y01.pdf used on input line 245
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d02-x01-y01.pdf, id=30, 337.16966pt x 304.4474pt>
-File: figs/zbb/d02-x01-y01.pdf Graphic file (type pdf)
+<figs/zbb/sherpa/d01-x01-y01.pdf, id=29, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d01-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d02-x01-y01.pdf>
-Package pdftex.def Info: figs/zbb/d02-x01-y01.pdf used on input line 202.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/sherpa/d01-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d01-x01-y01.pdf used on input line 251
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d03-x01-y01_rescaled.pdf, id=31, 337.16966pt x 304.4474pt>
-File: figs/zbb/d03-x01-y01_rescaled.pdf Graphic file (type pdf)
+<figs/zbb/sherpa/d02-x01-y01.pdf, id=30, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d02-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d03-x01-y01_rescaled.pdf>
-Package pdftex.def Info: figs/zbb/d03-x01-y01_rescaled.pdf used on input line 2
+<use figs/zbb/sherpa/d02-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d02-x01-y01.pdf used on input line 252
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/sherpa/d03-x01-y01_rescaled.pdf, id=31, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d03-x01-y01_rescaled.pdf Graphic file (type pdf)
+
+<use figs/zbb/sherpa/d03-x01-y01_rescaled.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d03-x01-y01_rescaled.pdf used on input
+ line 258.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/sherpa/d05-x01-y01_rescaled.pdf, id=32, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d05-x01-y01_rescaled.pdf Graphic file (type pdf)
+
+<use figs/zbb/sherpa/d05-x01-y01_rescaled.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d05-x01-y01_rescaled.pdf used on input
+ line 259.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/sherpa/d07-x01-y01_rescaled.pdf, id=33, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d07-x01-y01_rescaled.pdf Graphic file (type pdf)
+
+<use figs/zbb/sherpa/d07-x01-y01_rescaled.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d07-x01-y01_rescaled.pdf used on input
+ line 260.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/sherpa/d11-x01-y01_rescaled.pdf, id=34, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d11-x01-y01_rescaled.pdf Graphic file (type pdf)
+
+<use figs/zbb/sherpa/d11-x01-y01_rescaled.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d11-x01-y01_rescaled.pdf used on input
+ line 261.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/sherpa/d13-x01-y01_rescaled.pdf, id=35, 337.16966pt x 304.4474pt>
+File: figs/zbb/sherpa/d13-x01-y01_rescaled.pdf Graphic file (type pdf)
+
+<use figs/zbb/sherpa/d13-x01-y01_rescaled.pdf>
+Package pdftex.def Info: figs/zbb/sherpa/d13-x01-y01_rescaled.pdf used on input
+ line 262.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzbb/d03-x01-y01.pdf, id=36, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzbb/d03-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzbb/d03-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzbb/d03-x01-y01.pdf used on input line 
+273.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzbb/d23-x01-y01.pdf, id=37, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzbb/d23-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzbb/d23-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzbb/d23-x01-y01.pdf used on input line 
+274.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzbb/d15-x01-y01.pdf, id=38, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzbb/d15-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzbb/d15-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzbb/d15-x01-y01.pdf used on input line 
+275.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzbb/d25-x01-y01.pdf, id=39, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzbb/d25-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzbb/d25-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzbb/d25-x01-y01.pdf used on input line 
+276.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzbb/d01-x01-y01.pdf, id=40, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzbb/d01-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzbb/d01-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzbb/d01-x01-y01.pdf used on input line 
+282.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzbb/d02-x01-y01.pdf, id=41, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzbb/d02-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzbb/d02-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzbb/d02-x01-y01.pdf used on input line 
+283.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzb/d03-x01-y01.pdf, id=42, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzb/d03-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzb/d03-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzb/d03-x01-y01.pdf used on input line 2
+90.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzb/d23-x01-y01.pdf, id=43, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzb/d23-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzb/d23-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzb/d23-x01-y01.pdf used on input line 2
+91.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzb/d15-x01-y01.pdf, id=44, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzb/d15-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzb/d15-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzb/d15-x01-y01.pdf used on input line 2
+92.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzb/d25-x01-y01.pdf, id=45, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzb/d25-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzb/d25-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzb/d25-x01-y01.pdf used on input line 2
+93.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzb/d01-x01-y01.pdf, id=46, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzb/d01-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzb/d01-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzb/d01-x01-y01.pdf used on input line 2
+99.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwigzb/d02-x01-y01.pdf, id=47, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwigzb/d02-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwigzb/d02-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwigzb/d02-x01-y01.pdf used on input line 3
+00.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/zbb/herwig4F/d03-x01-y01.pdf, id=48, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwig4F/d03-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/zbb/herwig4F/d03-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwig4F/d03-x01-y01.pdf used on input line 3
 07.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d05-x01-y01_rescaled.pdf, id=32, 337.16966pt x 304.4474pt>
-File: figs/zbb/d05-x01-y01_rescaled.pdf Graphic file (type pdf)
+<figs/zbb/herwig4F/d23-x01-y01.pdf, id=49, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwig4F/d23-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d05-x01-y01_rescaled.pdf>
-Package pdftex.def Info: figs/zbb/d05-x01-y01_rescaled.pdf used on input line 2
+<use figs/zbb/herwig4F/d23-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwig4F/d23-x01-y01.pdf used on input line 3
 08.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d07-x01-y01_rescaled.pdf, id=33, 337.16966pt x 304.4474pt>
-File: figs/zbb/d07-x01-y01_rescaled.pdf Graphic file (type pdf)
+<figs/zbb/herwig4F/d15-x01-y01.pdf, id=50, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwig4F/d15-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d07-x01-y01_rescaled.pdf>
-Package pdftex.def Info: figs/zbb/d07-x01-y01_rescaled.pdf used on input line 2
-11.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/herwig4F/d15-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwig4F/d15-x01-y01.pdf used on input line 3
+09.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d11-x01-y01_rescaled.pdf, id=34, 337.16966pt x 304.4474pt>
-File: figs/zbb/d11-x01-y01_rescaled.pdf Graphic file (type pdf)
+<figs/zbb/herwig4F/d25-x01-y01.pdf, id=51, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwig4F/d25-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d11-x01-y01_rescaled.pdf>
-Package pdftex.def Info: figs/zbb/d11-x01-y01_rescaled.pdf used on input line 2
-12.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/herwig4F/d25-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwig4F/d25-x01-y01.pdf used on input line 3
+10.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/zbb/d13-x01-y01_rescaled.pdf, id=35, 337.16966pt x 304.4474pt>
-File: figs/zbb/d13-x01-y01_rescaled.pdf Graphic file (type pdf)
+<figs/zbb/herwig4F/d01-x01-y01.pdf, id=52, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwig4F/d01-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/zbb/d13-x01-y01_rescaled.pdf>
-Package pdftex.def Info: figs/zbb/d13-x01-y01_rescaled.pdf used on input line 2
-15.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
+<use figs/zbb/herwig4F/d01-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwig4F/d01-x01-y01.pdf used on input line 3
+16.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<figs/wbb/d01-x01-y01.pdf, id=36, 337.16966pt x 304.4474pt>
-File: figs/wbb/d01-x01-y01.pdf Graphic file (type pdf)
+<figs/zbb/herwig4F/d02-x01-y01.pdf, id=53, 337.16966pt x 304.4474pt>
+File: figs/zbb/herwig4F/d02-x01-y01.pdf Graphic file (type pdf)
 
-<use figs/wbb/d01-x01-y01.pdf>
-Package pdftex.def Info: figs/wbb/d01-x01-y01.pdf used on input line 234.
-(pdftex.def)             Requested size: 168.58441pt x 152.22333pt.
- [4 <./figs/zbb/d03-x01-y01.pdf> <./figs/zbb/d23-x01-y01.pdf> <./figs/zbb/d15-x
-01-y01.pdf> <./figs/zbb/d25-x01-y01.pdf> <./figs/zbb/d01-x01-y01.pdf> <./figs/z
-bb/d02-x01-y01.pdf>] [5 <./figs/zbb/d03-x01-y01_rescaled.pdf> <./figs/zbb/d05-x
-01-y01_rescaled.pdf> <./figs/zbb/d07-x01-y01_rescaled.pdf> <./figs/zbb/d11-x01-
-y01_rescaled.pdf> <./figs/zbb/d13-x01-y01_rescaled.pdf>] <figs/wbb/d02-x01-y01.
-pdf, id=282, 340.01027pt x 304.4474pt>
-File: figs/wbb/d02-x01-y01.pdf Graphic file (type pdf)
+<use figs/zbb/herwig4F/d02-x01-y01.pdf>
+Package pdftex.def Info: figs/zbb/herwig4F/d02-x01-y01.pdf used on input line 3
+17.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<use figs/wbb/d02-x01-y01.pdf>
-Package pdftex.def Info: figs/wbb/d02-x01-y01.pdf used on input line 238.
-(pdftex.def)             Requested size: 170.00471pt x 152.22333pt.
+<figs/wbb/powheg/d01-x01-y01.pdf, id=54, 337.16966pt x 304.4474pt>
+File: figs/wbb/powheg/d01-x01-y01.pdf Graphic file (type pdf)
 
-<figs/wbb/d02-x02-y01.pdf, id=283, 340.01027pt x 304.4474pt>
-File: figs/wbb/d02-x02-y01.pdf Graphic file (type pdf)
+<use figs/wbb/powheg/d01-x01-y01.pdf>
+Package pdftex.def Info: figs/wbb/powheg/d01-x01-y01.pdf used on input line 334
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
 
-<use figs/wbb/d02-x02-y01.pdf>
-Package pdftex.def Info: figs/wbb/d02-x02-y01.pdf used on input line 239.
-(pdftex.def)             Requested size: 170.00471pt x 152.22333pt.
+<figs/wbb/powheg/d02-x01-y01.pdf, id=55, 340.01027pt x 304.4474pt>
+File: figs/wbb/powheg/d02-x01-y01.pdf Graphic file (type pdf)
+
+<use figs/wbb/powheg/d02-x01-y01.pdf>
+Package pdftex.def Info: figs/wbb/powheg/d02-x01-y01.pdf used on input line 342
+.
+(pdftex.def)             Requested size: 221.00404pt x 197.88846pt.
+
+<figs/wbb/powheg/d02-x02-y01.pdf, id=56, 340.01027pt x 304.4474pt>
+File: figs/wbb/powheg/d02-x02-y01.pdf Graphic file (type pdf)
+
+<use figs/wbb/powheg/d02-x02-y01.pdf>
+Package pdftex.def Info: figs/wbb/powheg/d02-x02-y01.pdf used on input line 343
+.
+(pdftex.def)             Requested size: 221.00404pt x 197.88846pt.
+
+<figs/wbb/herwig/d01-x01-y02.pdf, id=57, 337.16966pt x 304.4474pt>
+File: figs/wbb/herwig/d01-x01-y02.pdf Graphic file (type pdf)
+
+<use figs/wbb/herwig/d01-x01-y02.pdf>
+Package pdftex.def Info: figs/wbb/herwig/d01-x01-y02.pdf used on input line 355
+.
+(pdftex.def)             Requested size: 219.15768pt x 197.88846pt.
+
+<figs/wbb/herwig/d02-x01-y02.pdf, id=58, 340.01027pt x 304.4474pt>
+File: figs/wbb/herwig/d02-x01-y02.pdf Graphic file (type pdf)
+
+<use figs/wbb/herwig/d02-x01-y02.pdf>
+Package pdftex.def Info: figs/wbb/herwig/d02-x01-y02.pdf used on input line 363
+.
+(pdftex.def)             Requested size: 221.00404pt x 197.88846pt.
+
+<figs/wbb/herwig/d02-x02-y02.pdf, id=59, 340.01027pt x 304.4474pt>
+File: figs/wbb/herwig/d02-x02-y02.pdf Graphic file (type pdf)
+
+<use figs/wbb/herwig/d02-x02-y02.pdf>
+Package pdftex.def Info: figs/wbb/herwig/d02-x02-y02.pdf used on input line 364
+.
+(pdftex.def)             Requested size: 221.00404pt x 197.88846pt.
+
+<figs/wbb/sherpa/subtracted_h7_s22-1jet.pdf, id=60, 340.01027pt x 304.4474pt>
+File: figs/wbb/sherpa/subtracted_h7_s22-1jet.pdf Graphic file (type pdf)
+
+<use figs/wbb/sherpa/subtracted_h7_s22-1jet.pdf>
+Package pdftex.def Info: figs/wbb/sherpa/subtracted_h7_s22-1jet.pdf used on inp
+ut line 377.
+(pdftex.def)             Requested size: 221.00404pt x 197.88846pt.
+
+<figs/wbb/sherpa/subtracted_h7_s22-2jet.pdf, id=61, 340.01027pt x 304.4474pt>
+File: figs/wbb/sherpa/subtracted_h7_s22-2jet.pdf Graphic file (type pdf)
+
+<use figs/wbb/sherpa/subtracted_h7_s22-2jet.pdf>
+Package pdftex.def Info: figs/wbb/sherpa/subtracted_h7_s22-2jet.pdf used on inp
+ut line 378.
+(pdftex.def)             Requested size: 221.00404pt x 197.88846pt.
  (./vbb.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [6 <./figs/wbb/d01-x01-y01.pdf> <./figs/wbb/d02-x01-y01.pdf> <./figs/wbb/d02-
-x02-y01.pdf>]
+) [4] [5 <./figs/zbb/sherpa/d03-x01-y01.pdf> <./figs/zbb/sherpa/d23-x01-y01.pdf
+> <./figs/zbb/sherpa/d15-x01-y01.pdf> <./figs/zbb/sherpa/d25-x01-y01.pdf> <./fi
+gs/zbb/sherpa/d01-x01-y01.pdf> <./figs/zbb/sherpa/d02-x01-y01.pdf>] [6 <./figs/
+zbb/sherpa/d03-x01-y01_rescaled.pdf> <./figs/zbb/sherpa/d05-x01-y01_rescaled.pd
+f> <./figs/zbb/sherpa/d07-x01-y01_rescaled.pdf> <./figs/zbb/sherpa/d11-x01-y01_
+rescaled.pdf> <./figs/zbb/sherpa/d13-x01-y01_rescaled.pdf>] [7 <./figs/zbb/herw
+igzbb/d03-x01-y01.pdf> <./figs/zbb/herwigzbb/d23-x01-y01.pdf> <./figs/zbb/herwi
+gzbb/d15-x01-y01.pdf> <./figs/zbb/herwigzbb/d25-x01-y01.pdf> <./figs/zbb/herwig
+zbb/d01-x01-y01.pdf> <./figs/zbb/herwigzbb/d02-x01-y01.pdf>] [8 <./figs/zbb/her
+wigzb/d03-x01-y01.pdf> <./figs/zbb/herwigzb/d23-x01-y01.pdf> <./figs/zbb/herwig
+zb/d15-x01-y01.pdf> <./figs/zbb/herwigzb/d25-x01-y01.pdf> <./figs/zbb/herwigzb/
+d01-x01-y01.pdf> <./figs/zbb/herwigzb/d02-x01-y01.pdf>] [9 <./figs/zbb/herwig4F
+/d03-x01-y01.pdf> <./figs/zbb/herwig4F/d23-x01-y01.pdf> <./figs/zbb/herwig4F/d1
+5-x01-y01.pdf> <./figs/zbb/herwig4F/d25-x01-y01.pdf> <./figs/zbb/herwig4F/d01-x
+01-y01.pdf> <./figs/zbb/herwig4F/d02-x01-y01.pdf>] [10 <./figs/wbb/powheg/d01-x
+01-y01.pdf> <./figs/wbb/powheg/d02-x01-y01.pdf> <./figs/wbb/powheg/d02-x02-y01.
+pdf>] [11 <./figs/wbb/herwig/d01-x01-y02.pdf> <./figs/wbb/herwig/d02-x01-y02.pd
+f> <./figs/wbb/herwig/d02-x02-y02.pdf>]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ƒ in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
@@ -306,39 +512,40 @@ Missing character: There is no Â in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¤ in font ptmr7t!
-)
-[7] (./vbb.aux) ) 
+ [12 <./figs/wbb/sherpa/subtracted_h7_s22-1jet.pdf> <./figs/wbb/sherpa/subtract
+ed_h7_s22-2jet.pdf>]) [13] (./vbb.aux) ) 
 Here is how much of TeX's memory you used:
- 1782 strings out of 493629
- 26744 string characters out of 3143323
- 83792 words of memory out of 3000000
- 5045 multiletter control sequences out of 15000+200000
- 17456 words of font info for 40 fonts, out of 3000000 for 9000
+ 1901 strings out of 493629
+ 31226 string characters out of 3143323
+ 87914 words of memory out of 3000000
+ 5153 multiletter control sequences out of 15000+200000
+ 19140 words of font info for 42 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,8n,24p,1002b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2011/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2011
-/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2011/tex
-mf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2011/texmf-dist/
-fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
-pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw
-/palatino/uplri8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times
-/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on vbb.pdf (7 pages, 276889 bytes).
+ 38i,8n,24p,549b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fon
+ts/enc/dvips/base/8r.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/tex
+mf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2011/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on vbb.pdf (13 pages, 455938 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
+ 901 PDF objects out of 1000 (max. 8388607)
+ 751 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
