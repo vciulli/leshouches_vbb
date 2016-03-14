@@ -1,4 +1,7 @@
-\documentclass[11pt]{cernrep} \usepackage{graphicx,epsfig} \bibliographystyle{lesHouches}
+\documentclass[11pt]{cernrep} 
+\usepackage{graphicx,epsfig} 
+\bibliographystyle{lesHouches}
+
 \usepackage{xspace}
 \newcommand{\Sherpa}{S\protect\scalebox{0.8}{HERPA}\xspace}
 \newcommand{\CSS}{C\protect\scalebox{0.8}{SS}\xspace}
@@ -15,6 +18,19 @@
 \newcommand{\CVolver}{CV\protect\scalebox{0.8}{OLVER}\xspace}
 \newcommand{\ColorFull}{C\protect\scalebox{0.8}{OLOR}F\protect\scalebox{0.8}{ULL}\xspace}
 \newcommand{\pt}{\ensuremath{p_{T}}\xspace}
+\newcommand\sss{\mathchoice%
+{\displaystyle}%
+{\scriptstyle}%
+{\scriptscriptstyle}%
+{\scriptscriptstyle}%
+}
+\newcommand\MSB{\ifmmode {\overline{\rm MS}} \else $\overline{\rm MS}$\fi}
+\newcommand\MINLO{{\tt MiNLO}}
+\newcommand\muf{\mu_{\sss\rm F}}
+\newcommand\mur{\mu_{\sss\rm R}}
+\newcommand\KRA{K_{\scriptscriptstyle \rm R}}
+\newcommand\KFA{K_{\scriptscriptstyle \rm F}}
+\newcommand\POWHEGBOX{{\tt POWHEG BOX}}
 
 \begin{document}
 
@@ -26,81 +42,114 @@
 
 \subsection{Introduction}
 
-The vector boson production in association with one and two b jets at the CERN Large Hadron Collider is important for
-many different experimental and theoretical reasons. Bottom quarks have a peculiar signature which allows one to easily
-identify them thanks to a displaced decay vertex. The associated production with vector bosons is an important
-backgrounds to VH production with the Higgs boson decaying to b quarks, and many new physics searches. Theoretically,
-it offers an interesting testing ground for predictions involving heavy quarks. 
+The vector boson production in association with one and two b jets at the
+CERN Large Hadron Collider is important for many different experimental and
+theoretical reasons. Bottom quarks have a peculiar signature which allows one
+to easily identify them thanks to a displaced decay vertex. The associated
+production with vector bosons is an important backgrounds to VH production
+with the Higgs boson decaying to b quarks, and many new physics
+searches. Theoretically, it offers an interesting testing ground for
+predictions involving heavy quarks.
 
-There are two possible options for the
-calculation of processes with b-quarks in the final state at hadron colliders. In the four-flavour scheme (4F) b-quarks
-are not present in the parton density of the incident protons. They can only be generated in the final state and they
-are usually massive. In the five-flavour scheme (5F) the b-quark mass is considered small with
-respect to the scale of the process $Q$ and logarithms of the type $log^m\frac{Q^2}{m_b^2}$ are resummed into a b parton
-density function. The b-quark is therefore massless in this approach, though higher order mass effects
-can be included in the calculation. A critical review of the different flavour number schemes and of the
-status of theoretical calculations is available in Ref.~\cite{Maltoni:2012pa}. The two approaches give identical results
-to all orders in perturbation theory, but they can be different at finite order. In the 4F scheme the computation
-is more complicate, but the full kinematics of the heavy quarks is taken into account. Furthermore it can be easily
-interfaced to parton showers, even at NLO using the \MCatNLO~\cite{Frixione:2002ik} or the Powheg~\cite{Nason:2004rx} formalisms. 
-On the other hand logarithms in the initial state are not resummed and could lead to large discrepancies in the
-inclusive quantities like the total cross-section. In the 5F approach, on the opposite, calculations for the inclusive
-quantities are highly simplified and generally more accurate, but differential distributions and exclusive observables are
-technically more involved. 
+There are two possible options for the calculation of processes with b-quarks
+in the final state at hadron colliders. In the four-flavour scheme (4F)
+b-quarks are not present in the parton density of the incident protons. They
+can only be generated in the final state and they are usually massive. In the
+five-flavour scheme (5F) the b-quark mass is considered small with respect to
+the scale of the process $Q$ and powers of logarithms of the type
+$\log\frac{Q^2}{m_b^2}$ are resummed into a b parton density function. The
+b-quark is therefore massless in this approach, though higher order mass
+effects can be included in the calculation. A critical review of the
+different flavour number schemes and of the status of theoretical
+calculations is available in Ref.~\cite{Maltoni:2012pa}. The two approaches
+give identical results to all orders in perturbation theory, but they can be
+different at finite order. In the 4F scheme the computation is more
+complicate, but the full kinematics of the heavy quarks is taken into
+account. Furthermore it can be easily interfaced to parton showers, even at
+NLO using the \MCatNLO~\cite{Frixione:2002ik} or the
+POWHEG~\cite{Nason:2004rx} formalisms.  On the other hand logarithms in the
+initial state are not resummed and could lead to large discrepancies in the
+inclusive quantities like the total cross-section. In the 5F approach, on the
+opposite, calculations for the inclusive quantities are highly simplified and
+generally more accurate, but differential distributions and exclusive
+observables are technically more involved.
 
-The goal of this study is to compare the most recent measurements with the predictions of the state of the art
-generators using 4F and 5F scheme. The report is organised as follows. In Section \ref{rivet} we provide a short
-description of the ATLAS and CMS measurements, available in the Rivet framework, for $V+b+X$ and $V+b\bar{b}+X$, where $V$ is a $Z$ or a $W$ boson.
- In Section \ref{generators} we describe the generator setups used to obtain the
-predictions, which are compared to the measurements in Section \ref{Zbb} for the $Z$ and \ref{Wbb} for the $W$, before
-conclusions are drawn in Section \ref{concl}.   
+The goal of this study is to compare the most recent measurements with the
+predictions of the state of the art generators using 4F and 5F scheme. The
+report is organised as follows. In Section \ref{rivet} we provide a short
+description of the ATLAS and CMS measurements, available in the Rivet
+framework, for $V+b+X$ and $V+b\bar{b}+X$, where $V$ is a $Z$ or a $W$ boson.
+In Section \ref{generators} we describe the generator setups used to obtain
+the predictions, which are compared to the measurements in Section \ref{Zbb}
+for the $Z$ and \ref{Wbb} for the $W$, before conclusions are drawn in
+Section \ref{concl}.
 
 
 \subsection{Rivet Routines \label{rivet}}
 
-Results in this study were produced using three Rivet routines to compare to published ATLAS and CMS data.
+Results in this study were produced using three Rivet routines to compare to
+published ATLAS and CMS data.
 
 \begin{itemize}
-\item Measurement of differential production cross-sections for a $Z$\ boson in association with b-jets in proton-proton
-  collisions at $\sqrt{s} = 7$~TeV with the ATLAS detector~\cite{Aad:2014dvb} (Rivet routine 
-  ATLAS\_2014\_I1306294). A pair of opposite sign charge dressed leptons\footnote{Leptons are dressed by adding the
-    four-vectors of all photons within $\Delta R<0.1$\ to the lepton 4-vector} (i.e. electrons or muons) with
-  $\pt>20$~GeV and $|\eta|<2.5$ are required, with a dilepton mass between 76 and 106~GeV. Anti-k$_{t}$\ 0.4 jets are
-  reconstructed from all final state particles, and required to have $\pt>$20~GeV, $|y|<2.4$ and not overlap with the
-  leptons used to make the $Z$~candidate ($\Delta R(jet, l)> 0.5$). Jets are labelled as $b$-jets based on matching with
-  $\Delta  R<0.3$ to a weakly decaying $b$-hadron with $\pt>5$~GeV. 
+\item Measurement of differential production cross-sections for a $Z$\ boson
+  in association with b-jets in proton-proton collisions at $\sqrt{s} =
+  7$~TeV with the ATLAS detector~\cite{Aad:2014dvb} (Rivet routine
+  ATLAS\_2014\_I1306294). A pair of opposite sign charge dressed
+  leptons\footnote{Leptons are dressed by adding the four-vectors of all
+    photons within $\Delta R<0.1$\ to the lepton 4-vector} (i.e. electrons or
+  muons) with $\pt>20$~GeV and $|\eta|<2.5$ are required, with a dilepton
+  mass between 76 and 106~GeV. Anti-k$_{t}$\ 0.4 jets are reconstructed from
+  all final state particles, and required to have $\pt>$20~GeV, $|y|<2.4$ and
+  not overlap with the leptons used to make the $Z$~candidate ($\Delta R(jet,
+  l)> 0.5$). Jets are labelled as $b$-jets based on matching with $\Delta
+  R<0.3$ to a weakly decaying $b$-hadron with $\pt>5$~GeV.
 
-  Distributions include the \pt and rapidity of $b$-jets and of the $Z$-boson, and for each $b$-jet, the $y_{boost}$ of
-  the $b$-jet and $Z$. For events with $Z\, \pt>20$~GeV, the $\Delta R, \Delta\phi$, and $\Delta y$\ between the $Z$ and
-  all $b$-jets are plotted. For events with at least two $b$-jets, the $\Delta R$\ and di-$b$-jet mass for the two
-  leading $b$-jets, along with the $Z$ \pt and rapidity are plotted. 
+  Distributions include the \pt and rapidity of $b$-jets and of the
+  $Z$-boson, and for each $b$-jet, the $y_{boost}$ of the $b$-jet and
+  $Z$. For events with $Z\, \pt>20$~GeV, the $\Delta R, \Delta\phi$, and
+  $\Delta y$\ between the $Z$ and all $b$-jets are plotted. For events with
+  at least two $b$-jets, the $\Delta R$\ and di-$b$-jet mass for the two
+  leading $b$-jets, along with the $Z$ \pt and rapidity are plotted.
 
-  For this study, further distributions were added: the \pt of all weakly decaying $b$ hadrons with $|y|<2.7$, and the
-  \pt of the subset of those that are matched to a jet. For $b$-jets, the number of matching $b$-hadrons, and the jet
-  \pt for jets with one or two matching $b$-hadrons are plotted, all  with and without the 5~GeV requirement on
-  $b$-hadron \pt. Finally the ratio of the number of jets matching one to those matching two $b$-had rons is plotted as
-  a function of jet \pt. All of these additional distributions are also formed using $b$-quarks instead of $b$-hadrons.  
+  For this study, further distributions were added: the \pt of all weakly
+  decaying $b$ hadrons with $|y|<2.7$, and the \pt of the subset of those
+  that are matched to a jet. For $b$-jets, the number of matching
+  $b$-hadrons, and the jet \pt for jets with one or two matching $b$-hadrons
+  are plotted, all with and without the 5~GeV requirement on $b$-hadron
+  \pt. Finally the ratio of the number of jets matching one to those matching
+  two $b$-hadrons is plotted as a function of jet \pt. All of these
+  additional distributions are also formed using $b$-quarks instead of
+  $b$-hadrons.
   
-\item Measurement of the cross-section for W boson production in association with b-jets in pp collisions at $\sqrt{s} =
-  7$~ TeV with the ATLAS detector~\cite{Aad:2013vka} (Rivet routine ATLAS\_2013\_I1219109). A dressed lepton with
-  $\pt>25$~GeV and $|\eta|<2.5$\ and a same-flavour neutrino with $\pt>25$~GeV are used to form a $W$~candidate, which
-  is required to have a transverse mass greater than $60$~GeV. Anti-k$_{t}$\ 0.4 jets are reconstructed from all final
-  state particles, and required to have $\pt>$25~GeV, $|y|<2.1$ and not overlap with the charged lepton used to make the
-  $W$~candidate ($\Delta R(jet, l)> 0.5$). Events with more than two selected jets are vetoed, and the at least one of
-  the selected jets is required to be labelled as $b$-jet, based on matching with $\Delta  R<0.3$ to a weakly decaying
-  $b$-hadron with $\pt>5$~GeV. 
+\item Measurement of the cross-section for W boson production in association
+  with b-jets in pp collisions at $\sqrt{s} = 7$~TeV with the ATLAS
+  detector~\cite{Aad:2013vka} (Rivet routine ATLAS\_2013\_I1219109). A
+  dressed lepton with $\pt>25$~GeV and $|\eta|<2.5$\ and a same-flavour
+  neutrino with $\pt>25$~GeV are used to form a $W$~candidate, which is
+  required to have a transverse mass greater than $60$~GeV. Anti-k$_{t}$\ 0.4
+  jets are reconstructed from all final state particles, and required to have
+  $\pt>$25~GeV, $|y|<2.1$ and not overlap with the charged lepton used to
+  make the $W$~candidate ($\Delta R(jet, l)> 0.5$). Events with more than two
+  selected jets are vetoed, and the at least one of the selected jets is
+  required to be labelled as $b$-jet, based on matching with $\Delta R<0.3$
+  to a weakly decaying $b$-hadron with $\pt>5$~GeV.
 
-  Distributions include the number of $b$-jets, and the $b$-jet \pt in events containing exactly one or two selected
-  jets. The same additional distributions for the $Z$ analysis are also added to this analysis. 
+  Distributions include the number of $b$-jets, and the $b$-jet \pt in events
+  containing exactly one or two selected jets. The same additional
+  distributions for the $Z$ analysis are also added to this analysis.
   
-\item Cross-section and angular correlations in $Z$ boson with b-hadrons events at $\sqrt{s} = 7$
-  TeV~\cite{Chatrchyan:2013zja} (Rivet routine CMS\_2013\_i1256943). A pair of opposite sign charge dressed lepton with
-  $\pt>20$~GeV and $|\eta|<2.4$ are required, with dilepton mass between 81 and 101~GeV. Exactly two weakly decaying
-  b-hadrons with $\pt>15$~GeV and $|\eta|<2$\ are then required. 
+\item Cross-section and angular correlations in $Z$ boson with b-hadrons
+  events at $\sqrt{s} = 7$ TeV~\cite{Chatrchyan:2013zja} (Rivet routine
+  CMS\_2013\_i1256943). A pair of opposite sign charge dressed lepton with
+  $\pt>20$~GeV and $|\eta|<2.4$ are required, with dilepton mass between 81
+  and 101~GeV. Exactly two weakly decaying b-hadrons with $\pt>15$~GeV and
+  $|\eta|<2$\ are then required.
 
-  Distributions include the $Z$\ \pt, the $\Delta R$\ and $\Delta\phi$\ between $b$-hadrons, $\Delta R$\ between the $Z$
-  and closest $b$-hadron, and the asymmetry of the $\Delta R$\ between the $Z$ and closest $b$-hadron, and the $Z$\ and
-  the furthest $b$-hadron. The angular distributions are repeated with a requirement of $Z$\ $\pt>50$~GeV. 
+  Distributions include the $Z$\ \pt, the $\Delta R$\ and
+  $\Delta\phi$\ between $b$-hadrons, $\Delta R$\ between the $Z$ and closest
+  $b$-hadron, and the asymmetry of the $\Delta R$\ between the $Z$ and
+  closest $b$-hadron, and the $Z$\ and the furthest $b$-hadron. The angular
+  distributions are repeated with a requirement of $Z$\ $\pt>50$~GeV.
 
 
 \end{itemize}
@@ -110,132 +159,153 @@ Results in this study were produced using three Rivet routines to compare to pub
 \subsection{Event generators \label{generators}}
 
 \subsubsection{\protect\Sherpa }
-In this section we present results obtained with the \Sherpa event generator~\cite{Gleisberg:2008ta}. In particular we consider three different classes of samples: 4F~\MCatNLO, 5F~\MEPS and a 5F~\MEPSatNLO one.
+In this section we present results obtained with the \Sherpa event
+generator~\cite{Gleisberg:2008ta}. In particular we consider three different
+classes of samples: 4F~\MCatNLO, 5F~\MEPS and a 5F~\MEPSatNLO one.
 \begin{itemize}
-\item[4F \MCatNLO : ]{
-	This first set of results is obtained in the four-flavour scheme, and based
-	on the \MCatNLO technique~\cite{Frixione:2002ik}, as implemented in
-  	\Sherpa~\cite{Hoeche:2011fd}. In a four-flavour scheme calculation, $b$--quarks
-	can only be produced as final state massive particles. They are, therefore, 
-	completely decoupled from the evolution of the strong coupling, $\alpha_S$
-	and that of the PDFs. In this scheme the associated production at tree-level
-	starts from processes such as $jj \to b\bar{b}Z$ where $j$ can be either a light
-	quark or a gluon. No specific cuts are applied on the $b$--quarks, their finite
- 	mass regulates collinear divergences that would appear in
-  	the massless case. In most cases, therefore, a $b$-jet actually
- 	originates from the parton shower evolution and hadronization of a
-  	$b$--quark produced by the matrix element.}
-\item[5F~\MEPS :]{
-	In a 5F scheme $b$--quarks are treated as massless partons. Collinear 
-	logs are resummed into a $b$--PDF and they can appear as initial state 
-	particles as well as final state ones. In order to account for 0 and 1 $b$--jets
-	bins as well as to cure the collinear singularity that would arise with a 
-	massless final state parton, we use multi-jet merging. In \Sherpa, the well-established mechanism for
-        combining into one inclusive sample towers of  
-	matrix elements with increasing jet multiplicity at tree--\-level is the CKKW~\cite{Catani:2001cc}.
-	For this sample we merge together LO samples of $jj \to Z$, $jj \to Z+j$,
-	$jj \to Z+jj$,  $jj \to Z+jjj$ where now $j$ can be a light quark, a $b$--quark or a  		
-        gluon, and all these samples are further matched to the \Sherpa 
-	parton shower \CSS~\cite{Schumann:2007mg}. 
-	Merging rests on a jet-criterion, applied to the matrix
-  	elements.  As a result, jets are being produced by the fixed--order
-  	matrix elements and further evolved by the parton shower.  As a consequence,
-  	the jet criterion separating the two regimes is typically chosen such
-  	that the jets produced by the shower are softer than the jets
-  	entering the analysis.  This is realised here by a cut-off of
-  	$\mu_{\rm jet}\,=\, 10 $ GeV.}
+\item[4F \MCatNLO : ]{ This first set of results is obtained in the
+  four-flavour scheme, and based on the \MCatNLO
+  technique~\cite{Frixione:2002ik}, as implemented in
+  \Sherpa~\cite{Hoeche:2011fd}. In a four-flavour scheme calculation,
+  $b$--quarks can only be produced as final state massive particles. They
+  are, therefore, completely decoupled from the evolution of the strong
+  coupling, $\alpha_S$ and that of the PDFs. In this scheme the associated
+  production at tree-level starts from processes such as $jj \to b\bar{b}Z$
+  where $j$ can be either a light quark or a gluon. No specific cuts are
+  applied on the $b$--quarks, their finite mass regulates collinear
+  divergences that would appear in the massless case. In most cases,
+  therefore, a $b$-jet actually originates from the parton shower evolution
+  and hadronization of a $b$--quark produced by the matrix element.}
+\item[5F~\MEPS :]{ In a 5F scheme $b$--quarks are treated as massless
+  partons. Collinear logs are resummed into a $b$--PDF and they can appear as
+  initial state particles as well as final state ones. In order to account
+  for 0 and 1 $b$--jets bins as well as to cure the collinear singularity
+  that would arise with a massless final state parton, we use multi-jet
+  merging. In \Sherpa, the well-established mechanism for combining into one
+  inclusive sample towers of matrix elements with increasing jet multiplicity
+  at tree--\-level is the CKKW~\cite{Catani:2001cc}.  For this sample we
+  merge together LO samples of $jj \to Z$, $jj \to Z+j$, $jj \to Z+jj$, $jj
+  \to Z+jjj$ where now $j$ can be a light quark, a $b$--quark or a gluon, and
+  all these samples are further matched to the \Sherpa parton shower
+  \CSS~\cite{Schumann:2007mg}.  Merging rests on a jet-criterion, applied to
+  the matrix elements.  As a result, jets are being produced by the
+  fixed--order matrix elements and further evolved by the parton shower.  As
+  a consequence, the jet criterion separating the two regimes is typically
+  chosen such that the jets produced by the shower are softer than the jets
+  entering the analysis.  This is realised here by a cut-off of $\mu_{\rm
+    jet}\,=\, 10 $ GeV.}
 	
-\item[5F~\MEPSatNLO : ]{
-	In this scheme we use the extension to next--to leading order matrix elements, in
-  	a technique dubbed \MEPSatNLO~\cite{Hoeche:2012yf}.
-	In particular, we merge $jj \to Z$, $jj \to Z+j$, $jj \to Z+jj$ calculated with NLO
-	accuracy and we further merge this sample with $jj \to Z+jjj$ at the LO.
-	As in the previous case matching criterion has to be chosen, and this is 
-	realised by a cut-off of  $\mu_{\rm jet}\,=\, 10 $ GeV.}
+\item[5F~\MEPSatNLO : ]{ In this scheme we use the extension to next--to
+  leading order matrix elements, in a technique dubbed
+  \MEPSatNLO~\cite{Hoeche:2012yf}.  In particular, we merge $jj \to Z$, $jj
+  \to Z+j$, $jj \to Z+jj$ calculated with NLO accuracy and we further merge
+  this sample with $jj \to Z+jjj$ at the LO.  As in the previous case
+  matching criterion has to be chosen, and this is realised by a cut-off of
+  $\mu_{\rm jet}\,=\, 10 $ GeV.}
 \end{itemize}
 In \Sherpa, tree--\-level cross sections are provided by two matrix element
 generators, \Amegic~\cite{Krauss:2001iv} and \Comix~\cite{Gleisberg:2008fv},
-which also implement the automated infrared subtraction~\cite{Gleisberg:2007md}
-through the Catani--\-Seymour scheme~\cite{Catani:1996vz,Catani:2002hc}.
-For parton showering, the implementation of~\cite{Schumann:2007mg} is
-employed with the difference that for $g\to b\bar{b}$ splittings the invariant
-mass of the $b\bar{b}$ pair, instead of their transverse momentum, is being used as scale.
-NLO matrix elements are instead obtained from \OpenLoops~\cite{Cascioli:2011va, Cascioli:2014wya}.
+which also implement the automated infrared
+subtraction~\cite{Gleisberg:2007md} through the Catani--\-Seymour
+scheme~\cite{Catani:1996vz,Catani:2002hc}.  For parton showering, the
+implementation of~\cite{Schumann:2007mg} is employed with the difference that
+for $g\to b\bar{b}$ splittings the invariant mass of the $b\bar{b}$ pair,
+instead of their transverse momentum, is being used as scale.  NLO matrix
+elements are instead obtained from \OpenLoops~\cite{Cascioli:2011va,
+  Cascioli:2014wya}.
 
 \subsubsection{\Herwig}
-In this section we present the setup for those results obtained with the \Herwig event generator~\cite{Bellm:2015jjp,Bahr:2008pv}.
+In this section we present the setup for those results obtained with the
+\Herwig event generator~\cite{Bellm:2015jjp,Bahr:2008pv}.
 
-Based on extensions of the previously developed \Matchbox module~\cite{Platzer:2011bc},
-\Herwig facilitates the automated setup of all ingredients necessary for a full NLO QCD calculation in the subtraction formalism:
-an implementation of the Catani--Seymour dipole subtraction method~\cite{Catani:1996vz,Catani:2002hc},
-as well as interfaces to a list of external matrix--element providers --
-either at the level of squared matrix elements, based on extensions of the BLHA standard~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa},
-or at the level of color--ordered subamplitudes,
-where the color bases are provided by an interface to the \ColorFull~\cite{Sjodahl:2014opa} and \CVolver~\cite{Platzer:2013fha} libraries.
+Based on extensions of the previously developed \Matchbox
+module~\cite{Platzer:2011bc}, \Herwig facilitates the automated setup of all
+ingredients necessary for a full NLO QCD calculation in the subtraction
+formalism: an implementation of the Catani--Seymour dipole subtraction
+method~\cite{Catani:1996vz,Catani:2002hc}, as well as interfaces to a list of
+external matrix--element providers -- either at the level of squared matrix
+elements, based on extensions of the BLHA
+standard~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}, or at the
+level of color--ordered subamplitudes, where the color bases are provided by
+an interface to the \ColorFull~\cite{Sjodahl:2014opa} and
+\CVolver~\cite{Platzer:2013fha} libraries.
 
-For this study the relevant tree--level matrix elements are provided by \MadGraph\_\MCatNLO~\cite{Alwall:2011uj,Alwall:2014hca}
-(at the level of color--ordered subamplitudes),
-whereas the relevant tree--level/one--loop interference terms are provided by \OpenLoops~\cite{Cascioli:2011va,Cascioli:2014wya}
-(at the level of squared matrix elements). 
+For this study the relevant tree--level matrix elements are provided by
+\MadGraph\_\MCatNLO~\cite{Alwall:2011uj,Alwall:2014hca} (at the level of
+color--ordered subamplitudes), whereas the relevant tree--level/one--loop
+interference terms are provided by
+\OpenLoops~\cite{Cascioli:2011va,Cascioli:2014wya} (at the level of squared
+matrix elements).
 
-Fully automated NLO matching algorithms are available,
-henceforth referred to as subtractive (NLO$\oplus$) and multiplicative (NLO$\otimes$) matching
--- based on the MC@NLO~\cite{Frixione:2002ik} and Powheg~\cite{Nason:2004rx} formalism respectively --
-for the systematic and consistent combination of NLO QCD calculations with both shower variants~\cite{Gieseke:2003rz,Platzer:2009jq} in \Herwig.
+Fully automated NLO matching algorithms are available, henceforth referred to
+as subtractive (NLO$\oplus$) and multiplicative (NLO$\otimes$) matching --
+based on the MC@NLO~\cite{Frixione:2002ik} and POWHEG~\cite{Nason:2004rx}
+formalism respectively -- for the systematic and consistent combination of
+NLO QCD calculations with both shower
+variants~\cite{Gieseke:2003rz,Platzer:2009jq} in \Herwig.
 
-We consider four different classes of samples, for varying combinations of matching and shower algorithms
-(a selection of plots can be found in sections \ref{sec:ZHerwig} and \ref{sec:WHerwig}):
+We consider four different classes of samples, for varying combinations of
+matching and shower algorithms (a selection of plots can be found in sections
+\ref{sec:ZHerwig} and \ref{sec:WHerwig}):
 \begin{itemize}
-\item[4F, Zbb] For this set we consider the subtractive and multiplicative matching
-together with the $\tilde{q}$ shower.
-The core tree--level process in this case is $jj \to Z b\bar{b} \to l^+ l^- b\bar{b}$,
-where $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
-In a four--flavour scheme the $b$ quark is typically considered massive
-and $j$ can only consist of light quarks or a gluon, not a $b$ quark.
-\item[5F, Zbb] For this set we consider the subtractive and multiplicative matching
-together with the $\tilde{q}$ and dipole shower.
-The core tree--level process in this case is $jj \to Z b\bar{b} \to l^+ l^- b\bar{b}$,
-where $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
-In a five--flavour scheme the $b$ quark is treated as massless,
-and $j$ may also include a $b$ quark.
-Generator--level cuts on the $b$ quarks have thus been applied.
-Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed massive.
-\item[5F, Zb] For this set we consider the subtractive and multiplicative matching
-together with the $\tilde{q}$ and dipole shower.
-The core tree--level process in this case is $jj_b \to Z j_b \to l^+ l^- j_b$,
-where $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
-In a five--flavour scheme the $b$ quark is treated as massless.
-For single $b$--quark production $j$ must not include a $b$ quark, but $j_b \in \{b,\bar{b}\}$.
-Generator--level cuts on the $b$ quark have thus been applied.
-Only in the shower evolution of the $\tilde{q}$ shower is the $b$ quark assumed massive.
-\item[4F, Wbb] For this set we consider the subtractive and multiplicative matching
-together with the $\tilde{q}$ shower.
-The core tree--level process in this case is $jj' \to W b\bar{b} \to l \nu_l b\bar{b}$,
-where $l \in \{e^+, e^-, \mu^+, \mu^-\}$ and $\nu_l$ the associated neutrino.
-In a four--flavour scheme the $b$ quark is typically considered massive
-and $j,j'$ can only consist of light quarks or a gluon, not a $b$ quark.
+\item[4F, Zbb] For this set we consider the subtractive and multiplicative
+  matching together with the $\tilde{q}$ shower.  The core tree--level
+  process in this case is $jj \to Z b\bar{b} \to l^+ l^- b\bar{b}$, where $l
+  \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
+  In a four--flavour scheme the $b$ quark is typically considered massive and
+  $j$ can only consist of light quarks or a gluon, not a $b$ quark.
+\item[5F, Zbb] For this set we consider the subtractive and multiplicative
+  matching together with the $\tilde{q}$ and dipole shower.  The core
+  tree--level process in this case is $jj \to Z b\bar{b} \to l^+ l^-
+  b\bar{b}$, where $l \in \{e, \mu\}$. For the production runs only $l=e$ is
+  actually considered.  In a five--flavour scheme the $b$ quark is treated as
+  massless, and $j$ may also include a $b$ quark.  Generator--level cuts on
+  the $b$ quarks have thus been applied.  Only in the shower evolution of the
+  $\tilde{q}$ shower is the $b$ quark assumed massive.
+\item[5F, Zb] For this set we consider the subtractive and multiplicative
+  matching together with the $\tilde{q}$ and dipole shower.  The core
+  tree--level process in this case is $jj_b \to Z j_b \to l^+ l^- j_b$, where
+  $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually
+  considered.  In a five--flavour scheme the $b$ quark is treated as
+  massless.  For single $b$--quark production $j$ must not include a $b$
+  quark, but $j_b \in \{b,\bar{b}\}$.  Generator--level cuts on the $b$ quark
+  have thus been applied.  Only in the shower evolution of the $\tilde{q}$
+  shower is the $b$ quark assumed massive.
+\item[4F, Wbb] For this set we consider the subtractive and multiplicative
+  matching together with the $\tilde{q}$ shower.  The core tree--level
+  process in this case is $jj' \to W b\bar{b} \to l \nu_l b\bar{b}$, where $l
+  \in \{e^+, e^-, \mu^+, \mu^-\}$ and $\nu_l$ the associated neutrino.  In a
+  four--flavour scheme the $b$ quark is typically considered massive and
+  $j,j'$ can only consist of light quarks or a gluon, not a $b$ quark.
 \end{itemize}
-
-\subsubsection{Powheg }
 
 \subsection{Z+b(b) production \label{Zbb}}
 
 \subsubsection{Z+b(b) with \Sherpa}
 
-Figures~\ref{zbb-sherpa-atlas} and ~\ref{zbb-sherpa-cms} show a selection of the plots comparing Sherpa predictions to data. 
-There is overall a good agreement, but for the normalization. The 5F LO order predictions are generally below the data, though compatible within
-the large scale uncertainty. For NLO predictions this uncertainty is smaller and some patterns can be
-observed. Both the 5F and the 4F NLO are in good agreement with distributions for events with two b-tagged jets. 
-But when a single b-jet is tagged, the 5F and 4F results have an opposite 
-behaviour: the 5F is ~20\% above the data (except for high $Z$ \pt), while 4F is ~20\% below. 
+Figures~\ref{zbb-sherpa-atlas} and ~\ref{zbb-sherpa-cms} show a selection of
+the plots comparing Sherpa predictions to data.  There is overall a good
+agreement, but for the normalization. The 5F LO order predictions are
+generally below the data, though compatible within the large scale
+uncertainty. For NLO predictions this uncertainty is smaller and some
+patterns can be observed. Both the 5F and the 4F NLO are in good agreement
+with distributions for events with two b-tagged jets.  But when a single
+b-jet is tagged, the 5F and 4F results have an opposite behaviour: the 5F is
+~20\% above the data (except for high $Z$ \pt), while 4F is ~20\% below.
 
-It is nevertheless remarkable that the ratio of 4F NLO predictions to data is flat for all the observables. This is
-particularly interesting, since it is more efficient to generate a sample of $Z+b\bar{b}$ events with the 4F scheme than 
-with the 5F. The reason why an overall normalization factor is needed could lie in the large logarithms, that in the 5F
-scheme are resummed in the $b$ parton distribution function. However they might not affect the shape of the distributions. To check this hypothesis the 4F NLO
-predictions have been rescaled to the best available inclusive cross-sections {\em FIXME:UNCERTAINTY BAND/REFERENCES}. A selection of the plots is
-shown in Figure~\ref{zbb-sherpa-scaled}. The results are very encouraging but further studies are needed to understand
-if this approach fails for other observables, e.g. those related to the presence of additional light-quark jets.  
+It is nevertheless remarkable that the ratio of 4F NLO predictions to data is
+flat for all the observables. This is particularly interesting, since it is
+more efficient to generate a sample of $Z+b\bar{b}$ events with the 4F scheme
+than with the 5F. The reason why an overall normalization factor is needed
+could lie in the large logarithms, that in the 5F scheme are resummed in the
+$b$ parton distribution function. However they might not affect the shape of
+the distributions. To check this hypothesis the 4F NLO predictions have been
+rescaled to the best available inclusive cross-sections {\em
+  FIXME:UNCERTAINTY BAND/REFERENCES}. A selection of the plots is shown in
+Figure~\ref{zbb-sherpa-scaled}. The results are very encouraging but further
+studies are needed to understand if this approach fails for other
+observables, e.g. those related to the presence of additional light-quark
+jets.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -260,7 +330,8 @@ if this approach fails for other observables, e.g. those related to the presence
    \includegraphics[scale=0.65]{figs/zbb/sherpa/d07-x01-y01_rescaled.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/sherpa/d11-x01-y01_rescaled.pdf} \\
    \includegraphics[scale=0.65]{figs/zbb/sherpa/d13-x01-y01_rescaled.pdf} 
-\caption{{\em FIXME:REMOVE ONE PLOT OR ADD Z PT?} A selection of the plots comparing rescaled Sherpa 4F NLO predictions to ATLAS results.}
+\caption{{\em FIXME:REMOVE ONE PLOT OR ADD Z PT?} A selection of the plots
+  comparing rescaled Sherpa 4F NLO predictions to ATLAS results.}
 \label{zbb-sherpa-scaled}
 \end{center}
 \end{figure}
@@ -325,26 +396,92 @@ if this approach fails for other observables, e.g. those related to the presence
 
 %\subsubsection{Z+bb, 4F}
 
-\subsection{W+b production \label{Wbb}}
 
-\subsubsection{W+b with Powheg}
+
+\clearpage
+
+
+
+
+
+
+\subsection{W+b production}
+\label{sec:Wbb}
+
+\subsubsection{W+b with POWHEG}
+All the details of the analysis performed using the {\tt Wbbj} code in the
+\POWHEGBOX{} framework can be found in ref.~\cite{Luisoni:2015mpa}. Here we
+briefly summarize them.
+\begin{enumerate}
+\item We have used a mixed renormalization scheme~\cite{Collins:1978wz},
+  generally known as decoupling scheme, in which the $n_{\rm lf}$ light flavours
+  are subtracted in the usual \MSB{} scheme, while the heavy-flavour loop is
+  subtracted at zero momentum. In this scheme, the heavy flavour decouples at
+  low energies. To make contact with other results expressed in terms of the
+  $\MSB$ strong coupling constant, running with 5 light flavours, and with
+  pdfs with 5 flavours, we have switched our scheme using the procedure
+  discussed in ref.~\cite{Cacciari:1998it}.
+
+\item We have generated $Wb\bar{b}j$ events using the
+  \MINLO~\cite{Hamilton:2012np} prescription, that attaches a suitable
+  Sudakov form factor to the $Wb\bar{b}j$ cross section at NLO, and subtracts
+  its expansion (not to have double counting of the Sudakov logarithms), in
+  order to get a finite cross section down to small transverse momentum of
+  the hardest jet.  The scales of the primary process (i.e.~the process
+  obtained by the attempt to cluster a $Wb\bar{b}j$ event with a procedure
+  similar to CKKW~\cite{Catani:2001cc}) have been chosen as follows:
+
+  \vspace{2mm}
+  \begin{enumerate}
+    \item if there has been a clusterization, then the scales are set to
+      \begin{equation}
+        \label{eq:Wbb_scales}
+        \mur=\muf= \mu\equiv\frac{\sqrt{\hat{s}}}{4}\,, \qquad\hat{s} = (p_{\sss\rm W}
+        + p_{\sss\rm b}+p_{\sss\rm \bar b})^2,
+      \end{equation}
+      where $p_{\sss \rm W}$, $p_{\sss \rm b}$ and $p_{\sss\rm \bar b}$
+      are the momenta of the $W$, $b$ and $\bar{b}$ in the primary process
+    \item If the event has not been clustered by the \MINLO{} procedure,
+      i.e.~if the underlying Born $Wb\bar{b}j$ process is not clustered by
+      \MINLO{}, we take as scale the partonic center-of-mass energy of the
+      event.      
+  \end{enumerate}
+  \vspace{2mm}
+  
+The bands in the plots of Figs.~\ref{fig:wbb-njet-powheg}
+and~\ref{fig:wbb-pt-powheg} of this section are the envelope of the
+distributions obtained by varying the renormalization and factorization
+scales by a factor of 2 around the reference scale $\mu$ of
+eq.~(\ref{eq:Wbb_scales}), i.e.~by multiplying the factorization and the
+renormalization scale by the scale factors $\KFA$ and $\KRA$, respectively,
+where
+\begin{equation}
+\label{eq:KRA_KFA}
+(\KRA,\KFA)=(0.5,0.5),  (0.5,1), (1,0.5), (1,1),(2,1),(1,2),(2,2).
+\end{equation}
+These variations have been computed using the \POWHEGBOX{} reweighting
+procedure, that recomputes the weight associated with an event in a fast way.
+\end{enumerate}
 
 \begin{figure}[htbp]
 \begin{center}
    \includegraphics[scale=0.65]{figs/wbb/powheg/d01-x01-y01.pdf}
 \end{center}
-\caption{Cross-section for $W+b$ events with at least one b-jet vs the total number of jets in the event. Superimposed are
-shown the predictions from Powheg $W+b\bar{b}j$ NLO.}
-\label{wbb-njet-powheg}
+\caption{\POWHEGBOX{} cross sections for the ATLAS measurement of ``1 jet'',
+  ``2 jet'' and ``1+2 jet'' $Wb$ production.  Results are at the full
+  shower+hadron level.  No DPI corrections included. }
+\label{fig:wbb-njet-powheg}
 \end{figure}
 \begin{figure}[htbp]
 \begin{center}
    \includegraphics[scale=0.65]{figs/wbb/powheg/d02-x01-y01.pdf}
    \includegraphics[scale=0.65]{figs/wbb/powheg/d02-x02-y01.pdf}
 \end{center}
-\caption{Differential \pt distribution of the b-jet in $W+b$ events with a single jet (left) or with two jets (right). Superimposed are
-shown the predictions from Powheg $W+b\bar{b}j$ NLO.}
-\label{wbb-pt-powheg}
+\caption{\POWHEGBOX{} transverse-momentum distribution of the $b$-tagged jet
+  in the ATLAS ``1 jet''~(left) and ``2 jet''~(right) samples for $Wb$
+  production. The theoretical results are at the shower+hadron level. No DPI
+  corrections included.}
+\label{fig:wbb-pt-powheg}
 \end{figure}
 
 \subsubsection{W+b with \Herwig}
@@ -354,8 +491,9 @@ shown the predictions from Powheg $W+b\bar{b}j$ NLO.}
 \begin{center}
    \includegraphics[scale=0.65]{figs/wbb/herwig/d01-x01-y02.pdf}
 \end{center}
-\caption{Cross-section for $W+b$ events with at least one b-jet vs the total number of jets in the event. Superimposed are
-shown the predictions from Herwig $W+b\bar{b}$ NLO.}
+\caption{Cross-section for $W+b$ events with at least one b-jet vs the total
+  number of jets in the event. Superimposed are shown the predictions from
+  Herwig $W+b\bar{b}$ NLO.}
 \label{wbb-njet-herwig}
 \end{figure}
 \begin{figure}[htbp]
@@ -363,8 +501,9 @@ shown the predictions from Herwig $W+b\bar{b}$ NLO.}
    \includegraphics[scale=0.65]{figs/wbb/herwig/d02-x01-y02.pdf}
    \includegraphics[scale=0.65]{figs/wbb/herwig/d02-x02-y02.pdf}
 \end{center}
-\caption{Differential \pt distribution of the b-jet in $W+b$ events with a single jet (left) or with two jets (right). Superimposed are
-shown the predictions from Herwig $W+b\bar{b}$ NLO.}
+\caption{Differential \pt distribution of the b-jet in $W+b$ events with a
+  single jet (left) or with two jets (right). Superimposed are shown the
+  predictions from Herwig $W+b\bar{b}$ NLO.}
 \label{wbb-pt-herwig}
 \end{figure}
 
@@ -376,14 +515,19 @@ shown the predictions from Herwig $W+b\bar{b}$ NLO.}
    \includegraphics[scale=0.65]{figs/wbb/sherpa/subtracted_h7_s22-1jet.pdf}
    \includegraphics[scale=0.65]{figs/wbb/sherpa/subtracted_h7_s22-2jet.pdf}
 \end{center}
-\caption{Differential \pt distribution of the b-jet in $W+b$ events with a single jet (left) or with two jets (right). Superimposed are
-shown the predictions from Sherpa $W+b\bar{b}j$. {\em FIXME: SHERPA IS LO/NLO? REMOVE HERWIG FROM THESE PLOTS? ADD ALSO RATE PLOT HERE OR REMOVE EVERYWHERE?}
+\caption{Differential \pt distribution of the b-jet in $W+b$ events with a
+  single jet (left) or with two jets (right). Superimposed are shown the
+  predictions from Sherpa $W+b\bar{b}j$. {\em FIXME: SHERPA IS LO/NLO? REMOVE
+    HERWIG FROM THESE PLOTS? ADD ALSO RATE PLOT HERE OR REMOVE EVERYWHERE?}
 }
 \label{wbb-pt-sherpa}
 \end{figure}
 
 \subsection{Conclusions \label{concl}}
 
+
+
+\clearpage
 \bibliography{vbb}
 
 \end{document}
