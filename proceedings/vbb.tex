@@ -121,6 +121,19 @@ published ATLAS and CMS data.
   additional distributions are also formed using $b$-quarks instead of
   $b$-hadrons.
   
+\item Cross-section and angular correlations in $Z$ boson with b-hadrons
+  events at $\sqrt{s} = 7$ TeV~\cite{Chatrchyan:2013zja} (Rivet routine
+  CMS\_2013\_i1256943). A pair of opposite sign charge dressed lepton with
+  $\pt>20$~GeV and $|\eta|<2.4$ are required, with dilepton mass between 81
+  and 101~GeV. Exactly two weakly decaying b-hadrons with $\pt>15$~GeV and
+  $|\eta|<2$\ are then required.
+
+  Distributions include the $Z$\ \pt, the $\Delta R$\ and
+  $\Delta\phi$\ between $b$-hadrons, $\Delta R$\ between the $Z$ and closest
+  $b$-hadron, and the asymmetry of the $\Delta R$\ between the $Z$ and
+  closest $b$-hadron, and the $Z$\ and the furthest $b$-hadron. The angular
+  distributions are repeated with a requirement of $Z$\ $\pt>50$~GeV.
+
 \item Measurement of the cross-section for W boson production in association
   with b-jets in pp collisions at $\sqrt{s} = 7$~TeV with the ATLAS
   detector~\cite{Aad:2013vka} (Rivet routine ATLAS\_2013\_I1219109). A
@@ -138,28 +151,14 @@ published ATLAS and CMS data.
   containing exactly one or two selected jets. The same additional
   distributions for the $Z$ analysis are also added to this analysis.
   
-\item Cross-section and angular correlations in $Z$ boson with b-hadrons
-  events at $\sqrt{s} = 7$ TeV~\cite{Chatrchyan:2013zja} (Rivet routine
-  CMS\_2013\_i1256943). A pair of opposite sign charge dressed lepton with
-  $\pt>20$~GeV and $|\eta|<2.4$ are required, with dilepton mass between 81
-  and 101~GeV. Exactly two weakly decaying b-hadrons with $\pt>15$~GeV and
-  $|\eta|<2$\ are then required.
-
-  Distributions include the $Z$\ \pt, the $\Delta R$\ and
-  $\Delta\phi$\ between $b$-hadrons, $\Delta R$\ between the $Z$ and closest
-  $b$-hadron, and the asymmetry of the $\Delta R$\ between the $Z$ and
-  closest $b$-hadron, and the $Z$\ and the furthest $b$-hadron. The angular
-  distributions are repeated with a requirement of $Z$\ $\pt>50$~GeV.
-
 
 \end{itemize}
 
-
-
 \subsection{Event generators \label{generators}}
 
+
 \subsubsection{\protect\Sherpa }
-In this section we present results obtained with the \Sherpa event
+In this section we present the setups that are used in this study for the \Sherpa event
 generator~\cite{Gleisberg:2008ta}. In particular we consider three different
 classes of samples: 4F~\MCatNLO, 5F~\MEPS and a 5F~\MEPSatNLO one.
 \begin{itemize}
@@ -279,6 +278,61 @@ matching and shower algorithms (a selection of plots can be found in sections
   $j,j'$ can only consist of light quarks or a gluon, not a $b$ quark.
 \end{itemize}
 
+\subsubsection{Powheg}
+
+All the details of the {\tt Wbbj} code in the \POWHEGBOX{} framework
+can be found in ref.~\cite{Luisoni:2015mpa}. Here we briefly summarize them.
+\begin{enumerate}
+\item We have used a mixed renormalization scheme~\cite{Collins:1978wz},
+  generally known as decoupling scheme, in which the $n_{\rm lf}$ light flavours
+  are subtracted in the usual \MSB{} scheme, while the heavy-flavour loop is
+  subtracted at zero momentum. In this scheme, the heavy flavour decouples at
+  low energies. To make contact with other results expressed in terms of the
+  $\MSB$ strong coupling constant, running with 5 light flavours, and with
+  pdfs with 5 flavours, we have switched our scheme using the procedure
+  discussed in ref.~\cite{Cacciari:1998it}.
+
+\item We have generated $Wb\bar{b}j$ events using the
+  \MINLO~\cite{Hamilton:2012np} prescription, that attaches a suitable
+  Sudakov form factor to the $Wb\bar{b}j$ cross section at NLO, and subtracts
+  its expansion (not to have double counting of the Sudakov logarithms), in
+  order to get a finite cross section down to small transverse momentum of
+  the hardest jet.  The scales of the primary process (i.e.~the process
+  obtained by the attempt to cluster a $Wb\bar{b}j$ event with a procedure
+  similar to CKKW~\cite{Catani:2001cc}) have been chosen as follows:
+
+  \vspace{2mm}
+  \begin{enumerate}
+    \item if there has been a clusterization, then the scales are set to
+      \begin{equation}
+        \label{eq:Wbb_scales}
+        \mur=\muf= \mu\equiv\frac{\sqrt{\hat{s}}}{4}\,, \qquad\hat{s} = (p_{\sss\rm W}
+        + p_{\sss\rm b}+p_{\sss\rm \bar b})^2,
+      \end{equation}
+      where $p_{\sss \rm W}$, $p_{\sss \rm b}$ and $p_{\sss\rm \bar b}$
+      are the momenta of the $W$, $b$ and $\bar{b}$ in the primary process
+    \item If the event has not been clustered by the \MINLO{} procedure,
+      i.e.~if the underlying Born $Wb\bar{b}j$ process is not clustered by
+      \MINLO{}, we take as scale the partonic center-of-mass energy of the
+      event.      
+  \end{enumerate}
+  \vspace{2mm}
+  
+The bands in the plots of Figs.~\ref{fig:wbb-njet-powheg}
+and~\ref{fig:wbb-pt-powheg} of this section are the envelope of the
+distributions obtained by varying the renormalization and factorization
+scales by a factor of 2 around the reference scale $\mu$ of
+eq.~(\ref{eq:Wbb_scales}), i.e.~by multiplying the factorization and the
+renormalization scale by the scale factors $\KFA$ and $\KRA$, respectively,
+where
+\begin{equation}
+\label{eq:KRA_KFA}
+(\KRA,\KFA)=(0.5,0.5),  (0.5,1), (1,0.5), (1,1),(2,1),(1,2),(2,2).
+\end{equation}
+These variations have been computed using the \POWHEGBOX{} reweighting
+procedure, that recomputes the weight associated with an event in a fast way.
+\end{enumerate}
+
 \subsection{Z+b(b) production \label{Zbb}}
 
 \subsubsection{Z+b(b) with \Sherpa}
@@ -397,71 +451,9 @@ jets.
 %\subsubsection{Z+bb, 4F}
 
 
-
-\clearpage
-
-
-
-
-
-
-\subsection{W+b production}
-\label{sec:Wbb}
+\subsection{W+b production \label{Wbb}}
 
 \subsubsection{W+b with POWHEG}
-All the details of the analysis performed using the {\tt Wbbj} code in the
-\POWHEGBOX{} framework can be found in ref.~\cite{Luisoni:2015mpa}. Here we
-briefly summarize them.
-\begin{enumerate}
-\item We have used a mixed renormalization scheme~\cite{Collins:1978wz},
-  generally known as decoupling scheme, in which the $n_{\rm lf}$ light flavours
-  are subtracted in the usual \MSB{} scheme, while the heavy-flavour loop is
-  subtracted at zero momentum. In this scheme, the heavy flavour decouples at
-  low energies. To make contact with other results expressed in terms of the
-  $\MSB$ strong coupling constant, running with 5 light flavours, and with
-  pdfs with 5 flavours, we have switched our scheme using the procedure
-  discussed in ref.~\cite{Cacciari:1998it}.
-
-\item We have generated $Wb\bar{b}j$ events using the
-  \MINLO~\cite{Hamilton:2012np} prescription, that attaches a suitable
-  Sudakov form factor to the $Wb\bar{b}j$ cross section at NLO, and subtracts
-  its expansion (not to have double counting of the Sudakov logarithms), in
-  order to get a finite cross section down to small transverse momentum of
-  the hardest jet.  The scales of the primary process (i.e.~the process
-  obtained by the attempt to cluster a $Wb\bar{b}j$ event with a procedure
-  similar to CKKW~\cite{Catani:2001cc}) have been chosen as follows:
-
-  \vspace{2mm}
-  \begin{enumerate}
-    \item if there has been a clusterization, then the scales are set to
-      \begin{equation}
-        \label{eq:Wbb_scales}
-        \mur=\muf= \mu\equiv\frac{\sqrt{\hat{s}}}{4}\,, \qquad\hat{s} = (p_{\sss\rm W}
-        + p_{\sss\rm b}+p_{\sss\rm \bar b})^2,
-      \end{equation}
-      where $p_{\sss \rm W}$, $p_{\sss \rm b}$ and $p_{\sss\rm \bar b}$
-      are the momenta of the $W$, $b$ and $\bar{b}$ in the primary process
-    \item If the event has not been clustered by the \MINLO{} procedure,
-      i.e.~if the underlying Born $Wb\bar{b}j$ process is not clustered by
-      \MINLO{}, we take as scale the partonic center-of-mass energy of the
-      event.      
-  \end{enumerate}
-  \vspace{2mm}
-  
-The bands in the plots of Figs.~\ref{fig:wbb-njet-powheg}
-and~\ref{fig:wbb-pt-powheg} of this section are the envelope of the
-distributions obtained by varying the renormalization and factorization
-scales by a factor of 2 around the reference scale $\mu$ of
-eq.~(\ref{eq:Wbb_scales}), i.e.~by multiplying the factorization and the
-renormalization scale by the scale factors $\KFA$ and $\KRA$, respectively,
-where
-\begin{equation}
-\label{eq:KRA_KFA}
-(\KRA,\KFA)=(0.5,0.5),  (0.5,1), (1,0.5), (1,1),(2,1),(1,2),(2,2).
-\end{equation}
-These variations have been computed using the \POWHEGBOX{} reweighting
-procedure, that recomputes the weight associated with an event in a fast way.
-\end{enumerate}
 
 \begin{figure}[htbp]
 \begin{center}

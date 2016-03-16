@@ -3,6 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: vbb.aux
 The style file: lesHouches.bst
 Database file #1: vbb.bib
+Repeated entry---line 506 of file vbb.bib
+ : @article{Catani:2001cc
+ :                       ,
+I'm skipping whatever remains of this entry
 Warning--empty title in Maltoni:2012pa
 Warning--empty title in Frixione:2002ik
 Warning--empty title in Nason:2004rx
@@ -33,45 +37,49 @@ Warning--empty title in Alwall:2011uj
 Warning--empty title in Alwall:2014hca
 Warning--empty title in Gieseke:2003rz
 Warning--empty title in Platzer:2009jq
-You've used 30 entries,
+Warning--empty title in Luisoni:2015mpa
+Warning--empty title in Collins:1978wz
+Warning--empty title in Cacciari:1998it
+Warning--empty title in Hamilton:2012np
+You've used 34 entries,
             2120 wiz_defined-function locations,
-            713 strings with 8393 characters,
-and the built_in function-call counts, 9195 in all, are:
-= -- 854
-> -- 324
+            740 strings with 9003 characters,
+and the built_in function-call counts, 10342 in all, are:
+= -- 957
+> -- 368
 < -- 0
-+ -- 119
-- -- 89
-* -- 815
-:= -- 1279
-add.period$ -- 32
-call.type$ -- 30
++ -- 135
+- -- 101
+* -- 915
+:= -- 1442
+add.period$ -- 36
+call.type$ -- 34
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 516
-empty$ -- 897
-format.name$ -- 89
-if$ -- 2362
+cite$ -- 68
+duplicate$ -- 584
+empty$ -- 1010
+format.name$ -- 101
+if$ -- 2658
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 118
-newline$ -- 93
-num.names$ -- 30
-pop$ -- 134
+int.to.str$ -- 34
+missing$ -- 134
+newline$ -- 105
+num.names$ -- 34
+pop$ -- 155
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 347
+skip$ -- 387
 stack$ -- 0
-substring$ -- 324
-swap$ -- 226
+substring$ -- 348
+swap$ -- 254
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 30
-while$ -- 64
-width$ -- 32
-write$ -- 300
-(There were 30 warnings)
+warning$ -- 34
+while$ -- 72
+width$ -- 36
+write$ -- 339
+(There was 1 error message)
