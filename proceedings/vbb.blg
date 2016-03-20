@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2011)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: vbb.aux
 The style file: lesHouches.bst
@@ -11,8 +11,8 @@ Warning--empty title in Maltoni:2012pa
 Warning--empty title in Frixione:2002ik
 Warning--empty title in Nason:2004rx
 Warning--empty title in Aad:2014dvb
-Warning--empty title in Aad:2013vka
 Warning--empty title in Chatrchyan:2013zja
+Warning--empty title in Aad:2013vka
 Warning--empty title in Gleisberg:2008ta
 Warning--empty title in Hoeche:2011fd
 Warning--empty title in Catani:2001cc
@@ -33,53 +33,54 @@ Warning--empty title in Alioli:2013nda
 Warning--empty title in Andersen:2014efa
 Warning--empty title in Sjodahl:2014opa
 Warning--empty title in Platzer:2013fha
-Warning--empty title in Alwall:2011uj
 Warning--empty title in Alwall:2014hca
+Warning--empty title in Alwall:2011uj
 Warning--empty title in Gieseke:2003rz
 Warning--empty title in Platzer:2009jq
+Warning--empty title in Harland-Lang:2014zoa
 Warning--empty title in Luisoni:2015mpa
 Warning--empty title in Collins:1978wz
 Warning--empty title in Cacciari:1998it
 Warning--empty title in Hamilton:2012np
-You've used 34 entries,
+You've used 35 entries,
             2120 wiz_defined-function locations,
-            740 strings with 9003 characters,
-and the built_in function-call counts, 10342 in all, are:
-= -- 957
-> -- 368
+            746 strings with 9182 characters,
+and the built_in function-call counts, 10651 in all, are:
+= -- 984
+> -- 382
 < -- 0
-+ -- 135
-- -- 101
-* -- 915
-:= -- 1442
-add.period$ -- 36
-call.type$ -- 34
++ -- 140
+- -- 105
+* -- 946
+:= -- 1487
+add.period$ -- 37
+call.type$ -- 35
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 584
-empty$ -- 1010
-format.name$ -- 101
-if$ -- 2658
+cite$ -- 70
+duplicate$ -- 601
+empty$ -- 1039
+format.name$ -- 105
+if$ -- 2736
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 134
-newline$ -- 105
-num.names$ -- 34
-pop$ -- 155
+int.to.str$ -- 35
+missing$ -- 138
+newline$ -- 108
+num.names$ -- 35
+pop$ -- 159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 387
+skip$ -- 397
 stack$ -- 0
-substring$ -- 348
-swap$ -- 254
+substring$ -- 354
+swap$ -- 261
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 34
-while$ -- 72
-width$ -- 36
-write$ -- 339
+warning$ -- 35
+while$ -- 74
+width$ -- 37
+write$ -- 350
 (There was 1 error message)
