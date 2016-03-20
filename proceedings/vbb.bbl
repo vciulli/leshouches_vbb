@@ -17,13 +17,13 @@ P.~Nason, {\em JHEP} {\bf 11} (2004) 040,
 G.~Aad {\em et.~al.},, {\bf ATLAS} Collaboration {\em JHEP} {\bf 10} (2014)
   141, [\href{http://xxx.lanl.gov/abs/1407.3643}{{\tt 1407.3643}}].
 
-\bibitem{Aad:2013vka}
-G.~Aad {\em et.~al.},, {\bf ATLAS} Collaboration {\em JHEP} {\bf 06} (2013)
-  084, [\href{http://xxx.lanl.gov/abs/1302.2929}{{\tt 1302.2929}}].
-
 \bibitem{Chatrchyan:2013zja}
 S.~Chatrchyan {\em et.~al.},, {\bf CMS} Collaboration {\em JHEP} {\bf 12}
   (2013) 039, [\href{http://xxx.lanl.gov/abs/1310.1349}{{\tt 1310.1349}}].
+
+\bibitem{Aad:2013vka}
+G.~Aad {\em et.~al.},, {\bf ATLAS} Collaboration {\em JHEP} {\bf 06} (2013)
+  084, [\href{http://xxx.lanl.gov/abs/1302.2929}{{\tt 1302.2929}}].
 
 \bibitem{Gleisberg:2008ta}
 T.~Gleisberg, S.~H{\"o}che, F.~Krauss, M.~Sch\"{o}nherr, S.~Schumann,
@@ -108,15 +108,15 @@ M.~Sjodahl, {\em Eur. Phys. J.} {\bf C75} (2015), no.~5 236,
 S.~Plätzer, {\em Eur. Phys. J.} {\bf C74} (2014), no.~6 2907,
   [\href{http://xxx.lanl.gov/abs/1312.2448}{{\tt 1312.2448}}].
 
-\bibitem{Alwall:2011uj}
-J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, {\em JHEP}
-  {\bf 06} (2011) 128, [\href{http://xxx.lanl.gov/abs/1106.0522}{{\tt
-  1106.0522}}].
-
 \bibitem{Alwall:2014hca}
 J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
   H.~S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro, {\em JHEP} {\bf 07} (2014)
   079, [\href{http://xxx.lanl.gov/abs/1405.0301}{{\tt 1405.0301}}].
+
+\bibitem{Alwall:2011uj}
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, {\em JHEP}
+  {\bf 06} (2011) 128, [\href{http://xxx.lanl.gov/abs/1106.0522}{{\tt
+  1106.0522}}].
 
 \bibitem{Gieseke:2003rz}
 S.~Gieseke, P.~Stephens, and B.~Webber, {\em JHEP} {\bf 12} (2003) 045,
@@ -125,6 +125,11 @@ S.~Gieseke, P.~Stephens, and B.~Webber, {\em JHEP} {\bf 12} (2003) 045,
 \bibitem{Platzer:2009jq}
 S.~Platzer and S.~Gieseke, {\em JHEP} {\bf 01} (2011) 024,
   [\href{http://xxx.lanl.gov/abs/0909.5593}{{\tt 0909.5593}}].
+
+\bibitem{Harland-Lang:2014zoa}
+L.~A. Harland-Lang, A.~D. Martin, P.~Motylinski, and R.~S. Thorne, {\em Eur.
+  Phys. J.} {\bf C75} (2015), no.~5 204,
+  [\href{http://xxx.lanl.gov/abs/1412.3989}{{\tt 1412.3989}}].
 
 \bibitem{Luisoni:2015mpa}
 G.~Luisoni, C.~Oleari, and F.~Tramontano, {\em JHEP} {\bf 04} (2015) 161,

@@ -14,6 +14,7 @@
 \newcommand{\OpenLoops}{O\protect\scalebox{0.8}{PEN}L\protect\scalebox{0.8}{OOPS}\xspace}
 \newcommand{\Herwig}{H\protect\scalebox{0.8}{ERWIG}7\xspace}
 \newcommand{\Matchbox}{M\protect\scalebox{0.8}{ATCHBOX}\xspace}
+\newcommand{\MGaMC}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH}5\_aMC@NLO\xspace}
 \newcommand{\MadGraph}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH}\xspace}
 \newcommand{\CVolver}{CV\protect\scalebox{0.8}{OLVER}\xspace}
 \newcommand{\ColorFull}{C\protect\scalebox{0.8}{OLOR}F\protect\scalebox{0.8}{ULL}\xspace}
@@ -31,6 +32,9 @@
 \newcommand\KRA{K_{\scriptscriptstyle \rm R}}
 \newcommand\KFA{K_{\scriptscriptstyle \rm F}}
 \newcommand\POWHEGBOX{{\tt POWHEG BOX}}
+
+\usepackage{color}
+\usepackage{morefloats}
 
 \begin{document}
 
@@ -213,7 +217,10 @@ instead of their transverse momentum, is being used as scale.  NLO matrix
 elements are instead obtained from \OpenLoops~\cite{Cascioli:2011va,
   Cascioli:2014wya}.
 
+
 \subsubsection{\Herwig}
+\label{subsubsec:herwigsetup}
+
 In this section we present the setup for those results obtained with the
 \Herwig event generator~\cite{Bellm:2015jjp,Bahr:2008pv}.
 
@@ -229,54 +236,103 @@ level of color--ordered subamplitudes, where the color bases are provided by
 an interface to the \ColorFull~\cite{Sjodahl:2014opa} and
 \CVolver~\cite{Platzer:2013fha} libraries.
 
-For this study the relevant tree--level matrix elements are provided by
-\MadGraph\_\MCatNLO~\cite{Alwall:2011uj,Alwall:2014hca} (at the level of
-color--ordered subamplitudes), whereas the relevant tree--level/one--loop
-interference terms are provided by
+For this study the relevant tree--level matrix elements are taken from \MGaMC
+\cite{Alwall:2014hca,Alwall:2011uj} (via a matrix--element interface at
+the level of color--ordered subamplitudes), whereas the relevant
+tree--level/one--loop interference terms are provided by
 \OpenLoops~\cite{Cascioli:2011va,Cascioli:2014wya} (at the level of squared
 matrix elements).
 
 Fully automated NLO matching algorithms are available, henceforth referred to
-as subtractive (NLO$\oplus$) and multiplicative (NLO$\otimes$) matching --
-based on the MC@NLO~\cite{Frixione:2002ik} and POWHEG~\cite{Nason:2004rx}
-formalism respectively -- for the systematic and consistent combination of
-NLO QCD calculations with both shower
-variants~\cite{Gieseke:2003rz,Platzer:2009jq} in \Herwig.
+as subtractive (\textit{NLO$\oplus$}) and multiplicative (\textit{NLO$\otimes$})
+matching -- based on the MC@NLO~\cite{Frixione:2002ik} and
+POWHEG~\cite{Nason:2004rx} formalism respectively -- for the systematic and
+consistent combination of NLO QCD calculations with both shower variants (the
+angular--ordered \textit{QTilde} shower~\cite{Gieseke:2003rz} and the
+\textit{Dipole} shower~\cite{Platzer:2009jq}) in \Herwig.
 
 We consider four different classes of samples, for varying combinations of
 matching and shower algorithms (a selection of plots can be found in sections
 \ref{sec:ZHerwig} and \ref{sec:WHerwig}):
 \begin{itemize}
 \item[4F, Zbb] For this set we consider the subtractive and multiplicative
-  matching together with the $\tilde{q}$ shower.  The core tree--level
-  process in this case is $jj \to Z b\bar{b} \to l^+ l^- b\bar{b}$, where $l
-  \in \{e, \mu\}$. For the production runs only $l=e$ is actually considered.
-  In a four--flavour scheme the $b$ quark is typically considered massive and
-  $j$ can only consist of light quarks or a gluon, not a $b$ quark.
+  matching together with the \textit{QTilde} shower. The tree--level process of
+  the underlying hard sub--process in this case is
+  $pp \to Z b\bar{b} \to e^+ e^- b\bar{b}$. For this sample the $b$ quark is
+  considered massive and $p$ only consist of light quarks or a gluon, not a $b$
+  quark.
 \item[5F, Zbb] For this set we consider the subtractive and multiplicative
-  matching together with the $\tilde{q}$ and dipole shower.  The core
-  tree--level process in this case is $jj \to Z b\bar{b} \to l^+ l^-
-  b\bar{b}$, where $l \in \{e, \mu\}$. For the production runs only $l=e$ is
-  actually considered.  In a five--flavour scheme the $b$ quark is treated as
-  massless, and $j$ may also include a $b$ quark.  Generator--level cuts on
-  the $b$ quarks have thus been applied.  Only in the shower evolution of the
-  $\tilde{q}$ shower is the $b$ quark assumed massive.
+  matching together with the \textit{QTilde} and \textit{Dipole} shower. The
+  tree--level process of the underlying hard sub--process in this case is
+  $pp \to Z b\bar{b} \to e^+ e^- b\bar{b}$. For this sample the $b$ quark is
+  treated as massless, and $p$ may also include a $b$ quark. Generator--level
+  cuts on the $b$ quarks have thus been applied. Only in the shower evolution of
+  the \textit{QTilde} shower is the $b$ quark assumed massive.
 \item[5F, Zb] For this set we consider the subtractive and multiplicative
-  matching together with the $\tilde{q}$ and dipole shower.  The core
-  tree--level process in this case is $jj_b \to Z j_b \to l^+ l^- j_b$, where
-  $l \in \{e, \mu\}$. For the production runs only $l=e$ is actually
-  considered.  In a five--flavour scheme the $b$ quark is treated as
-  massless.  For single $b$--quark production $j$ must not include a $b$
-  quark, but $j_b \in \{b,\bar{b}\}$.  Generator--level cuts on the $b$ quark
-  have thus been applied.  Only in the shower evolution of the $\tilde{q}$
-  shower is the $b$ quark assumed massive.
+  matching together with the \textit{QTilde} and \textit{Dipole} shower. The
+  tree--level process of the underlying hard sub--process in this case is
+  $pp \to Z j_b \to e^+ e^- j_b$, where $j_b\ni\{b,\bar{b}\}$. For this sample
+  the $b$ quark is treated as massless, and $p$ may also include a $b$ quark.
+  Generator--level cuts on the $b$ quark have thus been applied. Only in the
+  shower evolution of the \textit{QTilde} shower is the $b$ quark assumed
+  massive. For single $b$--quark production only one $p$ must contribute a $b$
+  quark at a time, at the level of the hard sub--process at hand.
 \item[4F, Wbb] For this set we consider the subtractive and multiplicative
-  matching together with the $\tilde{q}$ shower.  The core tree--level
-  process in this case is $jj' \to W b\bar{b} \to l \nu_l b\bar{b}$, where $l
-  \in \{e^+, e^-, \mu^+, \mu^-\}$ and $\nu_l$ the associated neutrino.  In a
-  four--flavour scheme the $b$ quark is typically considered massive and
-  $j,j'$ can only consist of light quarks or a gluon, not a $b$ quark.
+  matching together with the \textit{QTilde} shower. The tree--level process of
+  the underlying hard sub--process in this case is
+  $pp' \to W b\bar{b} \to l \nu_l b\bar{b}$, where
+  $l \in \{e^+, e^-, \mu^+, \mu^-\}$ and $\nu_l$ the associated (anti-)neutrino.
+  For this sample the $b$ quark is considered massive and $p,p'$ only consist of
+  light quarks or a gluon, not a $b$ quark; $p'$ simply denotes the contribution
+  of pair--wise different quark flavours in the intial state, as a result from
+  the $Wdu$ or $Wsc$ vertex.
 \end{itemize}
+
+\medskip
+
+In all samples the uncertainty bands are purely from scale variations by
+simultaneously varying all scales in the hard sub--process and in the shower by
+factors of two up and down, i.e. factorization and renormalization scale in the
+hard sub--process, as well as scales related to $\alpha_s$ variation and PDF
+reweighting in the shower, as well as the hard shower scale. The central scale
+choice is always a fixed scale (the $Z$ mass in associated $Z$ production; the
+$W$ mass in associated $W$ production).
+
+The PDF sets being used are MMHT2014lo68cl and
+MMHT2014nlo68cl~\cite{Harland-Lang:2014zoa}, i.e. the default PDF sets
+to which the showers are currently tuned. An internal study showed that using
+different PDF sets (a different $n_f\!\!=\!\!5$ PDF set for the 5F runs or
+$n_f\!\!=\!\!4$ PDF sets for the 4F runs) results in only minor differences,
+within the scale variation uncertainties.
+
+In case the $b$ quark is assumed massive, its mass is set to the default value
+in \Herwig. All other relevant parameters, like $W$ and $Z$ mass and width,
+etc., are set to their respective default values in \Herwig as well.
+
+For the 5F, Zbb sample we cut on the final state $b$ quarks by including them
+into the jet--defining set of our jet matcher and requiring at least two jets,
+with a min. $p^\bot$ of 18~GeV and 15~GeV for the first and second jet
+respectively. The statistics for this sample are 40k unweighted events so far.
+
+For the 5F, Zb sample we cut on the final state $b$ quark (similarly to above)
+by requiring at least one jet, with a min. $p^\bot$ of 18~GeV for the first jet.
+The statistics for this sample are 100k unweighted events so far.
+
+For both 5F samples we apply generator level cuts on the invariant mass of the
+charged--lepton pair, with a min. invariant mass of 60~GeV and a max. invariant
+mass of 120~GeV.
+
+For the 4F, Zbb sample we apply no cuts on the $b$ quarks. However, we require
+the same generator level cuts as for the 5F, Zbb and Zb samples on the invariant
+mass of the charged--lepton pair again. In addition we cut slightly on the
+charged leptons, with a min. $p^\bot$ of 5~GeV and a rapidity range between -4
+and 4. The statistics for this sample are 100k unweighted events so far.
+
+For the 4F, Wbb sample we also apply no cuts on the $b$ quarks. However, we
+require a slight generator level cut on the transverse mass of the $W$, with a
+min. transverse mass of 20~GeV. We also cut slightly on the charged lepton, with
+a min. $p^\bot$ of 5~GeV and a rapidity range between -4 and 4. The statistics
+for this sample are 100k unweighted events so far.
 
 \subsubsection{Powheg}
 
@@ -393,55 +449,130 @@ jets.
 \subsubsection{Z+b(b) with \Herwig}
 \label{sec:ZHerwig}
 
+A selection of results is shown in figures~\ref{zbb-herwigzbb-atlas},
+\ref{zbb-herwigzbb-cms}, \ref{zbb-herwigzbb-atlas-2}
+and~\ref{zbb-herwigzbb-cms-2} for the 5F, Zbb setup,
+in figures~\ref{zbb-herwigzb-atlas}, \ref{zbb-herwigzb-cms},
+\ref{zbb-herwigzb-atlas-2} and~\ref{zbb-herwigzb-cms-2} for the 5F, Zb
+setup,
+and in figures~\ref{zbb-herwig4F-atlas}, \ref{zbb-herwig4F-cms},
+\ref{zbb-herwig4F-atlas-2} and~\ref{zbb-herwig4F-cms-2} for the 4F,
+Zbb setup.
+Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
+4F, Zbb sample we refer to section~\ref{subsubsec:herwigsetup}.
+
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/d23-x01-y01.pdf} \\
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/d15-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/d25-x01-y01.pdf} 
-\caption{A selection of the plots comparing Herwig 5F Zbb predictions to ATLAS results.}
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d23-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d15-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d25-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to ATLAS results.}
 \label{zbb-herwigzbb-atlas}
 \end{center}
 \end{figure}
 \begin{figure}[htbp]
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/d01-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/d02-x01-y01.pdf} 
-\caption{A selection of the plots comparing Herwig 5F Zbb predictions to CMS results.}
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d01-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d02-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to CMS results.}
 \label{zbb-herwigzbb-cms}
 \end{figure}
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/d23-x01-y01.pdf} \\
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/d15-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/d25-x01-y01.pdf} 
-\caption{A selection of the plots comparing Herwig 5F Zb predictions to ATLAS results.}
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d05-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d07-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d11-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d13-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to ATLAS results;
+  in comparison to figure~\ref{zbb-sherpa-scaled}.}
+\label{zbb-herwigzbb-atlas-2}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d04-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d09-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to CMS results.}
+\label{zbb-herwigzbb-cms-2}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d23-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d15-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d25-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zb predictions to ATLAS results.}
 \label{zbb-herwigzb-atlas}
 \end{center}
 \end{figure}
 \begin{figure}[htbp]
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/d01-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/d02-x01-y01.pdf} 
-\caption{A selection of the plots comparing Herwig 4F Zbb predictions to CMS results.}
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d01-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d02-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zb predictions to CMS results.}
 \label{zbb-herwigzb-cms}
 \end{figure}
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/d23-x01-y01.pdf} \\
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/d15-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/d25-x01-y01.pdf} 
-\caption{A selection of the plots comparing Herwig 4F Zbb predictions to ATLAS results.}
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d05-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d07-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d11-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d13-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zb predictions to ATLAS results;
+  in comparison to figure~\ref{zbb-sherpa-scaled}.}
+\label{zbb-herwigzb-atlas-2}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d04-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d09-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 5F, Zb predictions to CMS results.}
+\label{zbb-herwigzb-cms-2}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d23-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d15-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d25-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to ATLAS results.}
 \label{zbb-herwig4F-atlas}
 \end{center}
 \end{figure}
 \begin{figure}[htbp]
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/d01-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/d02-x01-y01.pdf} 
-\caption{A selection of the plots comparing Herwig 4F Zbb predictions to CMS results.}
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d01-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d02-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to CMS results.}
 \label{zbb-herwig4F-cms}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d05-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d07-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d11-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d13-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to ATLAS results;
+  in comparison to figure~\ref{zbb-sherpa-scaled}.}
+\label{zbb-herwig4F-atlas-2}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d03-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d04-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d09-x01-y01.pdf} 
+\caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to CMS results.}
+\label{zbb-herwig4F-cms-2}
 \end{figure}
 
 %\subsubsection{Z+b, 5F}
@@ -476,26 +607,30 @@ jets.
 \label{fig:wbb-pt-powheg}
 \end{figure}
 
-\subsubsection{W+b with \Herwig}
+\subsubsection{W+b(b) with \Herwig}
 \label{sec:WHerwig}
+
+A selection of results for the 4F, Wbb setup (as described in
+section~\ref{subsubsec:herwigsetup}) is shown in
+figures~\ref{wbb-njet-herwig} and~\ref{wbb-pt-herwig}.
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/wbb/herwig/d01-x01-y02.pdf}
+   \includegraphics[scale=0.65]{figs/wbb/herwig/atlas-d01-x01-y02.pdf}
 \end{center}
-\caption{Cross-section for $W+b$ events with at least one b-jet vs the total
+\caption{Cross-section for $W+b$ events with at least one $b$ jet vs. the total
   number of jets in the event. Superimposed are shown the predictions from
-  Herwig $W+b\bar{b}$ NLO.}
+  \Herwig 4F, Wbb.}
 \label{wbb-njet-herwig}
 \end{figure}
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/wbb/herwig/d02-x01-y02.pdf}
-   \includegraphics[scale=0.65]{figs/wbb/herwig/d02-x02-y02.pdf}
+   \includegraphics[scale=0.65]{figs/wbb/herwig/atlas-d02-x01-y02.pdf}
+   \includegraphics[scale=0.65]{figs/wbb/herwig/atlas-d02-x02-y02.pdf}
 \end{center}
-\caption{Differential \pt distribution of the b-jet in $W+b$ events with a
+\caption{Differential \pt distribution of the $b$ jet in $W+b$ events with a
   single jet (left) or with two jets (right). Superimposed are shown the
-  predictions from Herwig $W+b\bar{b}$ NLO.}
+  predictions from \Herwig 4F, Wbb.}
 \label{wbb-pt-herwig}
 \end{figure}
 
@@ -510,7 +645,8 @@ jets.
 \caption{Differential \pt distribution of the b-jet in $W+b$ events with a
   single jet (left) or with two jets (right). Superimposed are shown the
   predictions from Sherpa $W+b\bar{b}j$. {\em FIXME: SHERPA IS LO/NLO? REMOVE
-    HERWIG FROM THESE PLOTS? ADD ALSO RATE PLOT HERE OR REMOVE EVERYWHERE?}
+    HERWIG FROM THESE PLOTS? ADD ALSO RATE PLOT HERE OR REMOVE EVERYWHERE?
+}
 }
 \label{wbb-pt-sherpa}
 \end{figure}
