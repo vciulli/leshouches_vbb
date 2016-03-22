@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: vbb.aux
 The style file: lesHouches.bst
@@ -39,48 +39,62 @@ Warning--empty title in Gieseke:2003rz
 Warning--empty title in Platzer:2009jq
 Warning--empty title in Harland-Lang:2014zoa
 Warning--empty title in Luisoni:2015mpa
+Warning--empty title in Campbell:2012am
+Warning--empty title in Stelzer:1994ta
+Warning--empty title in Alwall:2007st
+Warning--empty title in Cullen:2011ac
+Warning--empty title in Cullen:2014yla
+Warning--empty title in Luisoni:2013cuh
+Warning--empty title in Nogueira:1991ex
+Warning--empty title in Kuipers:2012rf
+Warning--empty title in Cullen:2010jv
+Warning--empty title in vanDeurzen:2013saa
+Warning--empty title in Peraro:2014cba
+Warning--empty title in Mastrolia:2012bu
+Warning--empty title in vanHameren:2010cp
+Warning--empty title in Cullen:2011kv
 Warning--empty title in Collins:1978wz
 Warning--empty title in Cacciari:1998it
 Warning--empty title in Hamilton:2012np
-You've used 35 entries,
+You've used 49 entries,
             2120 wiz_defined-function locations,
-            746 strings with 9182 characters,
-and the built_in function-call counts, 10651 in all, are:
-= -- 984
-> -- 382
+            844 strings with 11715 characters,
+and the built_in function-call counts, 15662 in all, are:
+= -- 1453
+> -- 560
 < -- 0
-+ -- 140
-- -- 105
-* -- 946
-:= -- 1487
-add.period$ -- 37
-call.type$ -- 35
++ -- 205
+- -- 156
+* -- 1384
+:= -- 2168
+add.period$ -- 51
+call.type$ -- 49
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 70
-duplicate$ -- 601
-empty$ -- 1039
-format.name$ -- 105
-if$ -- 2736
+cite$ -- 98
+duplicate$ -- 867
+empty$ -- 1522
+format.name$ -- 156
+if$ -- 4018
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 138
-newline$ -- 108
-num.names$ -- 35
-pop$ -- 159
+int.to.str$ -- 49
+missing$ -- 194
+newline$ -- 150
+num.names$ -- 49
+pop$ -- 222
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 397
+skip$ -- 588
 stack$ -- 0
-substring$ -- 354
-swap$ -- 261
+substring$ -- 636
+swap$ -- 387
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 35
-while$ -- 74
-width$ -- 37
-write$ -- 350
+warning$ -- 49
+while$ -- 109
+width$ -- 51
+write$ -- 490
 (There was 1 error message)

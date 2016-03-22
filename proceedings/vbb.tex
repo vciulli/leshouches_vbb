@@ -264,7 +264,7 @@ angular--ordered \textit{QTilde} shower~\cite{Gieseke:2003rz} and the
 
 We consider four different classes of samples, for varying combinations of
 matching and shower algorithms (a selection of plots can be found in sections
-\ref{sec:ZHerwig} and \ref{sec:WHerwig}):
+\ref{sec:ZHerwig} and \ref{Wbb}):
 \begin{itemize}
 \item[4F, Zbb] For this set we consider the subtractive and multiplicative
   matching together with the \textit{QTilde} shower. The tree--level process of
@@ -345,7 +345,7 @@ min. transverse mass of 20~GeV. We also cut slightly on the charged lepton, with
 a min. $p^\bot$ of 5~GeV and a rapidity range between -4 and 4. The statistics
 for this sample are 100k unweighted events so far.
 
-\subsubsection{Powheg}
+\subsubsection{Powheg \label{sec:powheg}}
 
 The results obtained with the \POWHEGBOX{} framework are based on the
 generators presented in ref.~\cite{Luisoni:2015mpa}. The tree-level
@@ -408,8 +408,8 @@ briefly summarize the most important features.
   \end{enumerate}
   \vspace{2mm}
   
-The bands in the plots of Figs.~\ref{fig:wbb-njet-powheg}
-and~\ref{fig:wbb-pt-powheg} of this section are the envelope of the
+The bands in the plots of Figs.~\ref{fig:wbb-njet}
+and~\ref{fig:wbb-pt} of this section are the envelope of the
 distributions obtained by varying the renormalization and factorization
 scales by a factor of 2 around the reference scale $\mu$ of
 eq.~(\ref{eq:Wbb_scales}), i.e.~by multiplying the factorization and the
@@ -618,58 +618,31 @@ Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
 
 \subsection{W+b production \label{Wbb}}
 
-\subsubsection{W+b with POWHEG}
+Results for the 4F, Wbb setup (as described in
+section~\ref{sec:powheg} and \ref{subsubsec:herwigsetup}) are shown in
+figures~\ref{fig:wbb-njet} and~\ref{fig:wbb-pt}.
+
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/wbb/powheg/d01-x01-y01.pdf}
+   \includegraphics[scale=0.65]{figs/wbb/compared/d01-x01-y01.pdf}
 \end{center}
-\caption{\POWHEGBOX{} cross sections for the ATLAS measurement of ``1 jet'',
-  ``2 jet'' and ``1+2 jet'' $Wb$ production.  Results are at the full
-  shower+hadron level.  No DPI corrections included. }
-\label{fig:wbb-njet-powheg}
+\caption{ATLAS measured cross sections for $Wb$ production with only a b-tagged jet (``1
+  jet''), one b-tagged and at least an additional jet (``2 jet''), or both (``1+2 jet'') .
+  The theoretical results are at the full shower+hadron level. No DPI
+  corrections are included. } 
+\label{fig:wbb-njet}
 \end{figure}
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/wbb/powheg/d02-x01-y01.pdf}
-   \includegraphics[scale=0.65]{figs/wbb/powheg/d02-x02-y01.pdf}
+   \includegraphics[scale=0.65]{figs/wbb/compared/d02-x01-y01.pdf}
+   \includegraphics[scale=0.65]{figs/wbb/compared/d02-x02-y01.pdf}
 \end{center}
-\caption{\POWHEGBOX{} transverse-momentum distribution of the $b$-tagged jet
-  in the ATLAS ``1 jet''~(left) and ``2 jet''~(right) samples for $Wb$
-  production. The theoretical results are at the shower+hadron level. No DPI
-  corrections included.}
-\label{fig:wbb-pt-powheg}
+\caption{ATLAS measured differential \pt distribution of the $b$-tagged jet in $W+b$ events with a
+  single jet (left) or with at least one additional jet (right). The theoretical results
+  are at the shower+hadron level. No DPI corrections are included.}
+\label{fig:wbb-pt}
 \end{figure}
-
-\subsubsection{W+b(b) with \Herwig}
-\label{sec:WHerwig}
-
-A selection of results for the 4F, Wbb setup (as described in
-section~\ref{subsubsec:herwigsetup}) is shown in
-figures~\ref{wbb-njet-herwig} and~\ref{wbb-pt-herwig}.
-
-\begin{figure}[htbp]
-\begin{center}
-   \includegraphics[scale=0.65]{figs/wbb/herwig/atlas-d01-x01-y02.pdf}
-\end{center}
-\caption{Cross-section for $W+b$ events with at least one $b$ jet vs. the total
-  number of jets in the event. Superimposed are shown the predictions from
-  \Herwig 4F, Wbb.}
-\label{wbb-njet-herwig}
-\end{figure}
-\begin{figure}[htbp]
-\begin{center}
-   \includegraphics[scale=0.65]{figs/wbb/herwig/atlas-d02-x01-y02.pdf}
-   \includegraphics[scale=0.65]{figs/wbb/herwig/atlas-d02-x02-y02.pdf}
-\end{center}
-\caption{Differential \pt distribution of the $b$ jet in $W+b$ events with a
-  single jet (left) or with two jets (right). Superimposed are shown the
-  predictions from \Herwig 4F, Wbb.}
-\label{wbb-pt-herwig}
-\end{figure}
-
-\subsubsection{W+b with \Sherpa}
-
 
 \begin{figure}[htbp]
 \begin{center}
