@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.11)  23 MAR 2016 00:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.11)  23 MAR 2016 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,7 +770,7 @@ s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on vbb.pdf (21 pages, 679473 bytes).
+Output written on vbb.pdf (21 pages, 679415 bytes).
 PDF statistics:
  1372 PDF objects out of 1440 (max. 8388607)
  1147 compressed objects within 12 object streams
