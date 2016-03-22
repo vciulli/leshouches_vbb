@@ -16,6 +16,7 @@
 \newcommand{\Matchbox}{M\protect\scalebox{0.8}{ATCHBOX}\xspace}
 \newcommand{\MGaMC}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH}5\_aMC@NLO\xspace}
 \newcommand{\MadGraph}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH}\xspace}
+\newcommand{\MadGraphfour}{M\protect\scalebox{0.8}{AD}G\protect\scalebox{0.8}{RAPH4}\xspace}
 \newcommand{\CVolver}{CV\protect\scalebox{0.8}{OLVER}\xspace}
 \newcommand{\ColorFull}{C\protect\scalebox{0.8}{OLOR}F\protect\scalebox{0.8}{ULL}\xspace}
 \newcommand{\pt}{\ensuremath{p_{T}}\xspace}
@@ -31,7 +32,17 @@
 \newcommand\mur{\mu_{\sss\rm R}}
 \newcommand\KRA{K_{\scriptscriptstyle \rm R}}
 \newcommand\KFA{K_{\scriptscriptstyle \rm F}}
-\newcommand\POWHEGBOX{{\tt POWHEG BOX}}
+
+\newcommand{\GOSAM}{G\protect\scalebox{0.8}{O}S\protect\scalebox{0.8}{AM}\xspace}
+\newcommand{\POWHEGBOX}{P\protect\scalebox{0.8}{OWHEG} B\protect\scalebox{0.8}{OX}\xspace}
+\newcommand{\QGRAF}{Q\protect\scalebox{0.8}{GRAF}\xspace}
+\newcommand{\FORM}{F\protect\scalebox{0.8}{ORM}\xspace}
+\newcommand{\SAMURAI}{S\protect\scalebox{0.8}{AMURAI}\xspace}
+\newcommand{\GOLEM}{G\protect\scalebox{0.8}{OLEM}\xspace}
+\newcommand{\NINJA}{N\protect\scalebox{0.8}{INJA}\xspace}
+\newcommand{\SPINNEY}{S\protect\scalebox{0.8}{PINNEY}\xspace}
+\newcommand{\ONELOOP}{O\protect\scalebox{0.8}{NE}LO\protect\scalebox{0.8}{OP}\xspace}
+
 
 \usepackage{color}
 \usepackage{morefloats}
@@ -336,8 +347,31 @@ for this sample are 100k unweighted events so far.
 
 \subsubsection{Powheg}
 
-All the details of the {\tt Wbbj} code in the \POWHEGBOX{} framework
-can be found in ref.~\cite{Luisoni:2015mpa}. Here we briefly summarize them.
+The results obtained with the \POWHEGBOX{} framework are based on the
+generators presented in ref.~\cite{Luisoni:2015mpa}. The tree-level
+amplitudes, which include Born, real, spin- and colour-correlated Born
+amplitudes, were automatically generated using an
+interface~\cite{Campbell:2012am} to
+\MadGraphfour{}~\cite{Stelzer:1994ta,Alwall:2007st}, whereas the
+one-loop amplitudes were generated with
+\GOSAM{}~\cite{Cullen:2011ac,Cullen:2014yla} via the
+Binoth-Les-Houches (BLHA)
+interface~\cite{Binoth:2010xt,Alioli:2013nda}, presented for the
+\POWHEGBOX{} and \GOSAM{} in~\cite{Luisoni:2013cuh}.  The version 2.0
+of \GOSAM{}~\cite{Cullen:2014yla} that was run is the 2.0: it uses
+\QGRAF{}~\cite{Nogueira:1991ex}, \FORM~\cite{Kuipers:2012rf} and
+\SPINNEY{}~\cite{Cullen:2010jv} for the generation of the Feynman
+diagrams. These diagrams are then computed at running time with
+\NINJA{}~\cite{vanDeurzen:2013saa,Peraro:2014cba}, which is a
+reduction program based on the Laurent expansion of the
+integrand~\cite{Mastrolia:2012bu}, and using
+\ONELOOP~\cite{vanHameren:2010cp} for the evaluation of the scalar
+one-loop integrals. For unstable phase-space points, the reduction
+automatically switches to \GOLEM{}~\cite{Cullen:2011kv}, that allows
+to compute the same one-loop amplitude evaluating tensor integrals.
+
+Further details can be found in ref.~\cite{Luisoni:2015mpa}. Here we
+briefly summarize the most important features.
 \begin{enumerate}
 \item We have used a mixed renormalization scheme~\cite{Collins:1978wz},
   generally known as decoupling scheme, in which the $n_{\rm lf}$ light flavours
