@@ -50,10 +50,11 @@
 \begin{document}
 
 \section{Study of associated production of vector bosons and b-jets in
-  pp collisions at the LHC \protect\footnote{Contributing authors:
-    M.~Bell, J.~Butterworth,  V.~Ciulli,
+  pp collisions at the LHC  \protect\footnote{Section
+    coordinator:V.~Ciulli} $^{,}$ \protect\footnote{Contributing authors:
+    M.~Bell, J.~Butterworth, 
     G.~Hesketh, F. ~Krauss, G.~Luisoni, G.~Nail, D.~Napoletano,
-    C.~Oleari, S.~Platzer, C.~Reuschle, B.~Waugh, ... }}
+    C.~Oleari, S.~Platzer, C.~Reuschle, B.~Waugh}}
 
 \subsection{Introduction}
 
@@ -72,13 +73,14 @@ b-quarks are not present in the parton density of the incident protons. They
 can only be generated in the final state and they are usually massive. In the
 five-flavour scheme (5F) the b-quark mass is considered small with respect to
 the scale of the process $Q$ and powers of logarithms of the type
-$\log\frac{Q^2}{m_b^2}$ are resummed into a b parton density function. The
+$\log(Q^2/m_b^2)$ are resummed into a b parton density function. The
 b-quark is therefore massless in this approach, though higher order mass
 effects can be included in the calculation. A critical review of the
 different flavour number schemes and of the status of theoretical
-calculations is available in Ref.~\cite{Maltoni:2012pa}. The two approaches
-give identical results to all orders in perturbation theory, but they can be
-different at finite order. In the 4F scheme the computation is more
+calculations is available in Ref.~\cite{Maltoni:2012pa}. To all orders
+in perturbation theory the two approaches give identical results up to
+power suppressed mass terms. At finite order, however, they may give
+different results. In the 4F scheme the computation is more 
 complicate, but the full kinematics of the heavy quarks is taken into
 account. Furthermore it can be easily interfaced to parton showers, even at
 NLO using the \MCatNLO~\cite{Frixione:2002ik} or the
@@ -105,8 +107,8 @@ Section \ref{concl}.
 Results in this study were produced using three Rivet routines to compare to
 published ATLAS and CMS data.
 
-\begin{itemize}
-\item Measurement of differential production cross-sections for a $Z$\ boson
+\begin{description}
+\item[ATLAS Z+b(b)] Measurement of differential production cross-sections for a $Z$\ boson
   in association with b-jets in proton-proton collisions at $\sqrt{s} =
   7$~TeV with the ATLAS detector~\cite{Aad:2014dvb} (Rivet routine
   ATLAS\_2014\_I1306294). A pair of opposite sign charge dressed
@@ -126,19 +128,19 @@ published ATLAS and CMS data.
   at least two $b$-jets, the $\Delta R$\ and di-$b$-jet mass for the two
   leading $b$-jets, along with the $Z$ \pt and rapidity are plotted.
 
-  For this study, further distributions were added: the \pt of all weakly
-  decaying $b$ hadrons with $|y|<2.7$, and the \pt of the subset of those
-  that are matched to a jet. For $b$-jets, the number of matching
-  $b$-hadrons, and the jet \pt for jets with one or two matching $b$-hadrons
-  are plotted, all with and without the 5~GeV requirement on $b$-hadron
-  \pt. Finally the ratio of the number of jets matching one to those matching
-  two $b$-hadrons is plotted as a function of jet \pt. All of these
-  additional distributions are also formed using $b$-quarks instead of
-  $b$-hadrons.
+%   For this study, further distributions were added: the \pt of all weakly
+%   decaying $b$ hadrons with $|y|<2.7$, and the \pt of the subset of those
+%   that are matched to a jet. For $b$-jets, the number of matching
+%   $b$-hadrons, and the jet \pt for jets with one or two matching $b$-hadrons
+%   are plotted, all with and without the 5~GeV requirement on $b$-hadron
+%   \pt. Finally the ratio of the number of jets matching one to those matching
+%   two $b$-hadrons is plotted as a function of jet \pt. All of these
+%   additional distributions are also formed using $b$-quarks instead of
+%   $b$-hadrons.
   
-\item Cross-section and angular correlations in $Z$ boson with b-hadrons
+\item[CMS Z+BB] Cross-section and angular correlations in $Z$ boson with b-hadrons
   events at $\sqrt{s} = 7$ TeV~\cite{Chatrchyan:2013zja} (Rivet routine
-  CMS\_2013\_i1256943). A pair of opposite sign charge dressed lepton with
+  CMS\_2013\_I1256943). A pair of opposite sign charge dressed lepton with
   $\pt>20$~GeV and $|\eta|<2.4$ are required, with dilepton mass between 81
   and 101~GeV. Exactly two weakly decaying b-hadrons with $\pt>15$~GeV and
   $|\eta|<2$\ are then required.
@@ -149,7 +151,7 @@ published ATLAS and CMS data.
   closest $b$-hadron, and the $Z$\ and the furthest $b$-hadron. The angular
   distributions are repeated with a requirement of $Z$\ $\pt>50$~GeV.
 
-\item Measurement of the cross-section for W boson production in association
+\item[ATLAS W+b] Measurement of the cross-section for W boson production in association
   with b-jets in pp collisions at $\sqrt{s} = 7$~TeV with the ATLAS
   detector~\cite{Aad:2013vka} (Rivet routine ATLAS\_2013\_I1219109). A
   dressed lepton with $\pt>25$~GeV and $|\eta|<2.5$\ and a same-flavour
@@ -163,11 +165,12 @@ published ATLAS and CMS data.
   to a weakly decaying $b$-hadron with $\pt>5$~GeV.
 
   Distributions include the number of $b$-jets, and the $b$-jet \pt in events
-  containing exactly one or two selected jets. The same additional
-  distributions for the $Z$ analysis are also added to this analysis.
+  containing exactly one or two selected jets. 
+%  The same additional
+%  distributions for the $Z$ analysis are also added to this analysis.
   
 
-\end{itemize}
+\end{description}
 
 \subsection{Event generators \label{generators}}
 
@@ -176,7 +179,7 @@ published ATLAS and CMS data.
 In this section we present the setups that are used in this study for the \Sherpa event
 generator~\cite{Gleisberg:2008ta}. In particular we consider three different
 classes of samples: 4F~\MCatNLO, 5F~\MEPS and a 5F~\MEPSatNLO one.
-\begin{itemize}
+\begin{description}
 \item[4F \MCatNLO : ]{ This first set of results is obtained in the
   four-flavour scheme, and based on the \MCatNLO
   technique~\cite{Frixione:2002ik}, as implemented in
@@ -216,7 +219,7 @@ classes of samples: 4F~\MCatNLO, 5F~\MEPS and a 5F~\MEPSatNLO one.
   this sample with $jj \to Z+jjj$ at the LO.  As in the previous case
   matching criterion has to be chosen, and this is realised by a cut-off of
   $\mu_{\rm jet}\,=\, 10 $ GeV.}
-\end{itemize}
+\end{description}
 In \Sherpa, tree--\-level cross sections are provided by two matrix element
 generators, \Amegic~\cite{Krauss:2001iv} and \Comix~\cite{Gleisberg:2008fv},
 which also implement the automated infrared
@@ -265,24 +268,24 @@ angular--ordered \textit{QTilde} shower~\cite{Gieseke:2003rz} and the
 We consider four different classes of samples, for varying combinations of
 matching and shower algorithms (a selection of plots can be found in sections
 \ref{sec:ZHerwig} and \ref{Wbb}):
-\begin{itemize}
+\begin{description}
 \item[4F, Zbb] For this set we consider the subtractive and multiplicative
   matching together with the \textit{QTilde} shower. The tree--level process of
   the underlying hard sub--process in this case is
-  $pp \to Z b\bar{b} \to e^+ e^- b\bar{b}$. For this sample the $b$ quark is
-  considered massive and $p$ only consist of light quarks or a gluon, not a $b$
+  $pp \to e^+ e^- b\bar{b}$. For this sample the $b$ quark is
+  considered massive and $p$ only consists of light quarks or a gluon, not a $b$
   quark.
 \item[5F, Zbb] For this set we consider the subtractive and multiplicative
   matching together with the \textit{QTilde} and \textit{Dipole} shower. The
   tree--level process of the underlying hard sub--process in this case is
-  $pp \to Z b\bar{b} \to e^+ e^- b\bar{b}$. For this sample the $b$ quark is
+  $pp \to e^+ e^- b\bar{b}$. For this sample the $b$ quark is
   treated as massless, and $p$ may also include a $b$ quark. Generator--level
   cuts on the $b$ quarks have thus been applied. Only in the shower evolution of
   the \textit{QTilde} shower is the $b$ quark assumed massive.
 \item[5F, Zb] For this set we consider the subtractive and multiplicative
   matching together with the \textit{QTilde} and \textit{Dipole} shower. The
   tree--level process of the underlying hard sub--process in this case is
-  $pp \to Z j_b \to e^+ e^- j_b$, where $j_b\ni\{b,\bar{b}\}$. For this sample
+  $pp \to e^+ e^- j_b$, where $j_b\ni\{b,\bar{b}\}$. For this sample
   the $b$ quark is treated as massless, and $p$ may also include a $b$ quark.
   Generator--level cuts on the $b$ quark have thus been applied. Only in the
   shower evolution of the \textit{QTilde} shower is the $b$ quark assumed
@@ -297,15 +300,15 @@ matching and shower algorithms (a selection of plots can be found in sections
   light quarks or a gluon, not a $b$ quark; $p'$ simply denotes the contribution
   of pair--wise different quark flavours in the intial state, as a result from
   the $Wdu$ or $Wsc$ vertex.
-\end{itemize}
+\end{description}
 
 \medskip
 
 In all samples the uncertainty bands are purely from scale variations by
 simultaneously varying all scales in the hard sub--process and in the shower by
 factors of two up and down, i.e. factorization and renormalization scale in the
-hard sub--process, as well as scales related to $\alpha_s$ variation and PDF
-reweighting in the shower, as well as the hard shower scale. The central scale
+hard sub--process, as well as scales related to $\alpha_s$ and the PDFs
+in the shower, as well as the hard shower scale. The central scale
 choice is always a fixed scale (the $Z$ mass in associated $Z$ production; the
 $W$ mass in associated $W$ production).
 
@@ -321,13 +324,13 @@ in \Herwig. All other relevant parameters, like $W$ and $Z$ mass and width,
 etc., are set to their respective default values in \Herwig as well.
 
 For the 5F, Zbb sample we cut on the final state $b$ quarks by including them
-into the jet--defining set of our jet matcher and requiring at least two jets,
+into the jet definition and requiring at least two jets,
 with a min. $p^\bot$ of 18~GeV and 15~GeV for the first and second jet
-respectively. The statistics for this sample are 40k unweighted events so far.
+respectively. The statistics for this sample are 100k unweighted events.
 
 For the 5F, Zb sample we cut on the final state $b$ quark (similarly to above)
 by requiring at least one jet, with a min. $p^\bot$ of 18~GeV for the first jet.
-The statistics for this sample are 100k unweighted events so far.
+The statistics for this sample are 100k unweighted events.
 
 For both 5F samples we apply generator level cuts on the invariant mass of the
 charged--lepton pair, with a min. invariant mass of 60~GeV and a max. invariant
@@ -337,13 +340,13 @@ For the 4F, Zbb sample we apply no cuts on the $b$ quarks. However, we require
 the same generator level cuts as for the 5F, Zbb and Zb samples on the invariant
 mass of the charged--lepton pair again. In addition we cut slightly on the
 charged leptons, with a min. $p^\bot$ of 5~GeV and a rapidity range between -4
-and 4. The statistics for this sample are 100k unweighted events so far.
+and 4. The statistics for this sample are 100k unweighted events.
 
 For the 4F, Wbb sample we also apply no cuts on the $b$ quarks. However, we
 require a slight generator level cut on the transverse mass of the $W$, with a
 min. transverse mass of 20~GeV. We also cut slightly on the charged lepton, with
 a min. $p^\bot$ of 5~GeV and a rapidity range between -4 and 4. The statistics
-for this sample are 100k unweighted events so far.
+for this sample are 100k unweighted events.
 
 \subsubsection{Powheg \label{sec:powheg}}
 
@@ -444,8 +447,14 @@ than with the 5F. The reason why an overall normalization factor is needed
 could lie in the large logarithms, that in the 5F scheme are resummed in the
 $b$ parton distribution function. However they might not affect the shape of
 the distributions. To check this hypothesis the 4F NLO predictions have been
-rescaled to the best available inclusive cross-sections {\em
-  FIXME:UNCERTAINTY BAND/REFERENCES}. A selection of the plots is shown in
+rescaled to the integrated cross-sections calculated with
+MCFM~\cite{Campbell:2010ff}. Depending on the observable and the applied
+selection, four different cross-sections are defined, as explained 
+in~\cite{Aad:2014dvb}. The value is corrected for QED final-state
+radiation (FSR), hadronisation, underlying event and multi-parton
+interactions (MPI). The uncertainty is given by the envelope of
+the results obtained with several PDFs, taking for each the sum in quadrature of all theory uncertainties.
+A selection of the plots is shown in
 Figure~\ref{zbb-sherpa-scaled}. The results are very encouraging but further
 studies are needed to understand if this approach fails for other
 observables, e.g. those related to the presence of additional light-quark
@@ -474,7 +483,8 @@ jets.
    \includegraphics[scale=0.65]{figs/zbb/sherpa/d07-x01-y01_rescaled.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/sherpa/d11-x01-y01_rescaled.pdf} \\
    \includegraphics[scale=0.65]{figs/zbb/sherpa/d13-x01-y01_rescaled.pdf} 
-\caption{{\em FIXME:REMOVE ONE PLOT OR ADD Z PT?} A selection of the plots
+   \includegraphics[scale=0.65]{figs/zbb/sherpa/d15-x01-y01_rescaled.pdf}
+\caption{A selection of the plots
   comparing rescaled Sherpa 4F NLO predictions to ATLAS results.}
 \label{zbb-sherpa-scaled}
 \end{center}
@@ -483,7 +493,7 @@ jets.
 \subsubsection{Z+b(b) with \Herwig}
 \label{sec:ZHerwig}
 
-A selection of results is shown in figures~\ref{zbb-herwigzbb-atlas},
+A selection of results obtained with \Herwig is shown in figures~\ref{zbb-herwigzbb-atlas},
 \ref{zbb-herwigzbb-cms}, \ref{zbb-herwigzbb-atlas-2}
 and~\ref{zbb-herwigzbb-cms-2} for the 5F, Zbb setup,
 in figures~\ref{zbb-herwigzb-atlas}, \ref{zbb-herwigzb-cms},
@@ -492,8 +502,41 @@ setup,
 and in figures~\ref{zbb-herwig4F-atlas}, \ref{zbb-herwig4F-cms},
 \ref{zbb-herwig4F-atlas-2} and~\ref{zbb-herwig4F-cms-2} for the 4F,
 Zbb setup.
-Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
-4F, Zbb sample we refer to section~\ref{subsubsec:herwigsetup}.
+We refer to section~\ref{subsubsec:herwigsetup} for the process setups of
+the 5F, Zb and Zbb samples, as well as for the 4F, Zbb sample.
+
+Regarding the 5F, Zbb setup we note that we should expect somewhat large
+uncertainties in observables which are also sensitive to events with 1 $b$ jet,
+since at the level of the hard sub--process events with only 1 $b$ jet are only
+described by the real emission in this sample. Within those uncertainties, the
+prediction describes the data, with the exception of the $\Delta \phi(Z,b)$ and
+$\Delta R(Z,b)$ observables in figure~\ref{zbb-herwigzbb-atlas-2}, where the
+prediction shows a slight tendency to be systematically above the data towards
+the lower values of $\Delta \phi(Z,b)$ and $\Delta R(Z,b)$. Looking at the CMS
+data comparisons the \textit{Dipole} shower together with the subtractive matching
+seems to undershoot the data in the
+$\Delta R_{BB}$ and $\Delta \phi_{BB}$ observables, which, however, seems not to
+be the case in the corresponding observables (for $Z+\geq2b$-jets) in the ATLAS
+data comparisons (not shown here); however, here the combinations with the
+multiplicative matching seem to overshoot the data.
+
+An brief internal study with the \textit{NLO}$\oplus$\textit{QTilde} combination
+showed that a 5F, Zbj setup (where at the level of the hard sub--process events
+with only 1 $b$ jet are already produced at the Born level) yields the expected
+reduction in the uncertainty bands.
+
+The predictions from the 5F, Zb setup describes the data overall well. There
+seems to be a slight tendency, though, to systematically overshoot the data in
+the $b\mathrm{-jet}\,|y|$ and $y_{\mathrm{boost}}(Z,b)$ observables for
+$Z+\geq1b$-jet in figure~\ref{zbb-herwigzb-atlas-2} (the same holds for the
+$\Delta y(Z,B)$ observable, not shown here).
+
+With the 4F, Zbb setup we see that the predictions are generally below the
+data. However, also here we notice a similar behaviour as already pointed out
+for the \Sherpa results, in that the ratio of this 4F NLO prediction to data is
+flat -- except for the $\Delta R_{BB}$ and $\Delta \phi_{BB}$ observables in
+figure~\ref{zbb-herwig4F-cms}, where we notice that the predictions fall below
+the data in the two lowest value bins of each histogram.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -514,20 +557,26 @@ Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d05-x01-y01.pdf} \\
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d07-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d11-x01-y01.pdf} \\
+  % \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d03-x01-y01.pdf} 
+  % \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d05-x01-y01.pdf} \\
+  % \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d07-x01-y01.pdf} 
+  % \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d11-x01-y01.pdf} \\
+  % \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d13-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d05-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d07-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d11-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d13-x01-y01.pdf} 
-\caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to ATLAS results;
-  in comparison to figure~\ref{zbb-sherpa-scaled}.}
+\caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to ATLAS
+  results; together with the first histogram in figure~\ref{zbb-herwigzbb-atlas}
+  a comparison to the rescaled \Sherpa 4F NLO predictions in
+  figure~\ref{zbb-sherpa-scaled} can be made.}
 \label{zbb-herwigzbb-atlas-2}
 \end{center}
 \end{figure}
 
 \begin{figure}[htbp]
    \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d04-x01-y01.pdf} 
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d04-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwigzbb/cms-d09-x01-y01.pdf} 
 \caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to CMS results.}
 \label{zbb-herwigzbb-cms-2}
@@ -543,6 +592,7 @@ Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
 \label{zbb-herwigzb-atlas}
 \end{center}
 \end{figure}
+
 \begin{figure}[htbp]
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d01-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d02-x01-y01.pdf} 
@@ -552,20 +602,28 @@ Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d05-x01-y01.pdf} \\
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d07-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d11-x01-y01.pdf} \\
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d03-x01-y01.pdf} 
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d05-x01-y01.pdf} \\
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d07-x01-y01.pdf} 
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d11-x01-y01.pdf} \\
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d13-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d05-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d07-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d11-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d13-x01-y01.pdf} 
-\caption{A selection of the plots comparing \Herwig 5F, Zb predictions to ATLAS results;
-  in comparison to figure~\ref{zbb-sherpa-scaled}.}
+% \caption{A selection of the plots comparing \Herwig 5F, Zb predictions to ATLAS results;
+%   in comparison to figure~\ref{zbb-sherpa-scaled}.}
+\caption{A selection of the plots comparing \Herwig 5F, Zb predictions to ATLAS
+  results; together with the first histogram in figure~\ref{zbb-herwigzb-atlas}
+  a comparison to the rescaled \Sherpa 4F NLO predictions in
+  figure~\ref{zbb-sherpa-scaled} can be made.}
 \label{zbb-herwigzb-atlas-2}
 \end{center}
 \end{figure}
 
 \begin{figure}[htbp]
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d04-x01-y01.pdf} 
+   % \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d04-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/cms-d09-x01-y01.pdf} 
 \caption{A selection of the plots comparing \Herwig 5F, Zb predictions to CMS results.}
 \label{zbb-herwigzb-cms-2}
@@ -590,38 +648,38 @@ Regarding the process setups for the 5F, Zb and Zbb samples, as well as for the
 
 \begin{figure}[htbp]
 \begin{center}
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d05-x01-y01.pdf} \\
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d07-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d11-x01-y01.pdf} \\
+   % \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d03-x01-y01.pdf} 
+   % \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d05-x01-y01.pdf} \\
+   % \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d07-x01-y01.pdf} 
+   % \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d11-x01-y01.pdf} \\
+   % \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d13-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d05-x01-y01.pdf} 
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d07-x01-y01.pdf} \\
+   \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d11-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d13-x01-y01.pdf} 
-\caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to ATLAS results;
-  in comparison to figure~\ref{zbb-sherpa-scaled}.}
+% \caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to ATLAS results;
+%   in comparison to figure~\ref{zbb-sherpa-scaled}.}
+\caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to ATLAS
+  results; together with the first histogram in figure~\ref{zbb-herwig4F-atlas}
+  a comparison to the rescaled \Sherpa 4F NLO predictions in
+  figure~\ref{zbb-sherpa-scaled} can be made.}
 \label{zbb-herwig4F-atlas-2}
 \end{center}
 \end{figure}
 
 \begin{figure}[htbp]
    \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d03-x01-y01.pdf} 
-   \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d04-x01-y01.pdf} 
+%  \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d04-x01-y01.pdf} 
    \includegraphics[scale=0.65]{figs/zbb/herwig4F/cms-d09-x01-y01.pdf} 
 \caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to CMS results.}
 \label{zbb-herwig4F-cms-2}
 \end{figure}
-
-%\subsubsection{Z+b, 5F}
-
-%\subsubsection{Z+bb, 5F}
-
-%\subsubsection{Z+bb, 4F}
-
 
 \subsection{W+b production \label{Wbb}}
 
 Results for the 4F, Wbb setup (as described in
 section~\ref{sec:powheg} and \ref{subsubsec:herwigsetup}) are shown in
 figures~\ref{fig:wbb-njet} and~\ref{fig:wbb-pt}.
-
 
 \begin{figure}[htbp]
 \begin{center}
@@ -651,18 +709,30 @@ figures~\ref{fig:wbb-njet} and~\ref{fig:wbb-pt}.
 \end{center}
 \caption{Differential \pt distribution of the b-jet in $W+b$ events with a
   single jet (left) or with two jets (right). Superimposed are shown the
-  predictions from Sherpa $W+b\bar{b}j$. {\em FIXME: SHERPA IS LO/NLO? REMOVE
-    HERWIG FROM THESE PLOTS? ADD ALSO RATE PLOT HERE OR REMOVE EVERYWHERE?
-}
-}
+  predictions from Sherpa $W+b\bar{b}j$. {\em FIXME: REMOVE HERWIG,
+    SHOWS SHERPA WITH AND WITHOUT MPI}}
 \label{wbb-pt-sherpa}
 \end{figure}
 
 \subsection{Conclusions \label{concl}}
 
+We presented a comparison of generators predictions using 4F and 5F scheme to most recent
+measurements of vector boson production in association with b-jets at the LHC. In the 4F scheme a good agreement is found among the
+different generators at NLO accuracy, and among different matrix-element to parton-shower matching algorithms. The
+agreement with data however is good only when two b-jets are tagged in the final state or, when one b-jet only is
+required, if a rescaling to the 5F integrated cross-section is applied. For Wbb,in addition, the contribution from MPI
+must be taken into account, otherwise predictions significantly undershoot the data. The Zb(b) production has been
+compared with predictions obtained in the 5F scheme with different setups, i.e. explicitely requiring one or two b-jets
+in the final state or a b-quark in the incoming proton when calculating the matrix element; or with no requirements on
+b-jets (treating them as light quarks) and combining final states with additional jets with a merging technique at LO
+and, where possible, also at NLO. Pro and cons of the different approaches are more difficult to pin down. In some case
+the scale uncertainty is quite large and not all distributions shows a nice agreement with data, especially if two
+b-tagged jets are present in the final state. 
 
+These results show that the associated production of vector bosons and b-jets is still an important benchmark for
+perturbative QCD at hadron colliders and both more measurements and additional theoretical studies are needed. 
 
-\clearpage
+%\clearpage
 \bibliography{vbb}
 
 \end{document}
