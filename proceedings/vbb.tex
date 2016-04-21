@@ -2,6 +2,11 @@
 \usepackage{graphicx,epsfig}
 \bibliographystyle{lesHouches}
 
+\usepackage{lineno}
+\linenumbers
+\usepackage{parskip}% http://ctan.org/pkg/parskip
+\setlength{\parindent}{0pt}
+
 \usepackage{xspace}
 \newcommand{\Sherpa}{S\protect\scalebox{0.8}{HERPA}\xspace}
 \newcommand{\Powheg}{P\protect\scalebox{0.8}{OWHEG}\xspace}
@@ -422,7 +427,7 @@ briefly summarize the most important features.
   \end{enumerate}
   \vspace{2mm}
 
-The bands in the plots of Figs.~\ref{fig:wbb-njet}
+The bands in the plots of Figures~\ref{fig:wbb-njet}
 and~\ref{fig:wbb-pt} of this section are the envelope of the
 distributions obtained by varying the renormalization and factorization
 scales by a factor of 2 around the reference scale $\mu$ of
@@ -436,6 +441,8 @@ where
 These variations have been computed using the \POWHEGBOX{} reweighting
 procedure, that recomputes the weight associated with an event in a fast way.
 \end{enumerate}
+
+\clearpage
 
 \subsection{Z+b(b) production \label{Zbb}}
 
@@ -505,18 +512,18 @@ jets.
 \label{sec:ZHerwig}
 
 A selection of results obtained with \Herwig is shown in
-figures~\ref{zbb-herwigzbb-atlas}, \ref{zbb-herwigzbb-atlas-2}
+Figures~\ref{zbb-herwigzbb-atlas}, \ref{zbb-herwigzbb-atlas-2}
 and~\ref{zbb-herwigzbb-cms} for the 5F, Zbb setup,
-in figures~\ref{zbb-herwigzb-atlas}, 
+in Figures~\ref{zbb-herwigzb-atlas}, 
 \ref{zbb-herwigzb-atlas-2} and~\ref{zbb-herwigzb-cms} for the 5F, Zb
 setup,
-and in figures~\ref{zbb-herwig4F-atlas}, 
+and in Figures~\ref{zbb-herwig4F-atlas}, 
 \ref{zbb-herwig4F-atlas-2} and~\ref{zbb-herwig4F-cms} for the 4F,
 Zbb setup.
 We refer to section~\ref{subsubsec:herwigsetup} for the process setups of
 the 5F, Zb and Zbb samples, as well as for the 4F, Zbb sample.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
 \begin{center}
    \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d03-x01-y01.pdf}
    \includegraphics[scale=0.65]{figs/zbb/herwigzbb/atlas-d23-x01-y01.pdf} \\
@@ -536,7 +543,7 @@ the 5F, Zb and Zbb samples, as well as for the 4F, Zbb sample.
 \caption{A selection of the plots comparing \Herwig 5F, Zbb predictions to ATLAS
   results; together with the plots in figure~\ref{zbb-herwigzbb-atlas}
   a comparison to the rescaled \Sherpa 4F NLO predictions in
-  figure~\ref{zbb-sherpa-scaled} can be made.}
+  Figure~\ref{zbb-sherpa-scaled} can be made.}
 \label{zbb-herwigzbb-atlas-2}
 \end{center}
 \end{figure}
@@ -574,9 +581,9 @@ the 5F, Zb and Zbb samples, as well as for the 4F, Zbb sample.
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d11-x01-y01.pdf}
    \includegraphics[scale=0.65]{figs/zbb/herwigzb/atlas-d13-x01-y01.pdf}
 \caption{A selection of the plots comparing \Herwig 5F, Zb predictions to ATLAS
-  results; together with the plots in figure~\ref{zbb-herwigzb-atlas}
+  results; together with the plots in Figure~\ref{zbb-herwigzb-atlas}
   a comparison to the rescaled \Sherpa 4F NLO predictions in
-  figure~\ref{zbb-sherpa-scaled} can be made.}
+  Figure~\ref{zbb-sherpa-scaled} can be made.}
 \label{zbb-herwigzb-atlas-2}
 \end{center}
 \end{figure}
@@ -614,9 +621,9 @@ the 5F, Zb and Zbb samples, as well as for the 4F, Zbb sample.
    \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d11-x01-y01.pdf}
    \includegraphics[scale=0.65]{figs/zbb/herwig4F/atlas-d13-x01-y01.pdf}
 \caption{A selection of the plots comparing \Herwig 4F, Zbb predictions to ATLAS
-  results; together with the plotss in figure~\ref{zbb-herwig4F-atlas}
+  results; together with the plotss in Figure~\ref{zbb-herwig4F-atlas}
   a comparison to the rescaled \Sherpa 4F NLO predictions in
-  figure~\ref{zbb-sherpa-scaled} can be made.}
+  Figure~\ref{zbb-sherpa-scaled} can be made.}
 \label{zbb-herwig4F-atlas-2}
 \end{center}
 \end{figure}
@@ -641,7 +648,7 @@ uncertainties in observables which are also sensitive to events with 1 $b$ jet,
 since at the level of the hard sub--process events with only 1 $b$ jet are only
 described by the real emission in this sample. Within those uncertainties, the
 prediction describes the data, with the exception of the $\Delta \phi(Z,b)$ and
-$\Delta R(Z,b)$ observables in figure~\ref{zbb-herwigzbb-atlas-2}, where the
+$\Delta R(Z,b)$ observables in Figure~\ref{zbb-herwigzbb-atlas-2}, where the
 prediction shows a slight tendency to be systematically above the data towards
 the lower values of $\Delta \phi(Z,b)$ and $\Delta R(Z,b)$. Looking at the CMS
 data comparisons the \textit{Dipole} shower together with the subtractive matching
@@ -659,14 +666,14 @@ reduction in the uncertainty bands.
 The predictions from the 5F, Zb setup describes the data overall well. There
 seems to be a slight tendency, though, to systematically overshoot the data in
 the $b\mathrm{-jet}\,|y|$ and $y_{\mathrm{boost}}(Z,b)$ observables for
-$Z+\geq 1\,b$-jet in figure~\ref{zbb-herwigzb-atlas-2} (the same holds for the
+$Z+\geq 1\,b$-jet in Figure~\ref{zbb-herwigzb-atlas-2} (the same holds for the
 $\Delta y(Z,B)$ observable, not shown here).
 
 With the 4F, Zbb setup we see that the predictions are generally below the
 data. However, also here we notice a similar behaviour as already pointed out
 for the \Sherpa results, in that the ratio of this 4F NLO prediction to data is
 flat -- except for the $\Delta R_{BB}$ and $\Delta \phi_{BB}$ observables in
-figure~\ref{zbb-herwig4F-cms}, where we notice that the predictions fall below
+Figure~\ref{zbb-herwig4F-cms}, where we notice that the predictions fall below
 the data at the lowest end of the distributions.
 
 \subsection{W+b production \label{Wbb}}
@@ -725,7 +732,7 @@ with 5F LO predictions obtained with the \Sherpa generator as explained in sec.~
 \label{fig:wbb-pt-sherpa}
 \end{figure}
 
-The first figure present results for the total cross section in the
+The first Figure present results for the total cross section in the
 case of only one b-tagged jet (``1 jet''), one b-tagged and at least
 an additional jet (``2 jet''), or both (``1+2 jet''). Despite the
 underlying generators consider two different underlying partonic
@@ -769,7 +776,7 @@ above also contains measurements for the transverse momentum spectrum
 of the $b$-tagged jet in the ``1 jet'' and ``2 jet'' samples. A
 comparison of the data with the \POWHEGBOX{} and \Herwig predictions
 for these observables is shown in the plots of
-figure~\ref{fig:wbb-pt}. Similarly to the inclusive case, also for
+Figure~\ref{fig:wbb-pt}. Similarly to the inclusive case, also for
 these distribution the different theoretical predictions are in very
 good agreement among each other, but roughly a factor of two smaller
 that the measurements. It is likely that also in this case, only part of
