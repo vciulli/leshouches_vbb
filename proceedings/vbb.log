@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.11)  2 MAY 2016 19:04
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.11)  2 MAY 2016 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,7 +691,7 @@ Here is how much of TeX's memory you used:
  5560 multiletter control sequences out of 15000+200000
  19216 words of font info for 42 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 36i,8n,24p,881b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,24p,910b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
@@ -715,7 +715,7 @@ a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 ocal/texlive/2011/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2011/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on vbb.pdf (20 pages, 650890 bytes).
+Output written on vbb.pdf (20 pages, 650898 bytes).
 PDF statistics:
  1188 PDF objects out of 1200 (max. 8388607)
  987 compressed objects within 10 object streams
