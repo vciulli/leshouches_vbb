@@ -75,6 +75,10 @@ F.~Cascioli, P.~Maierhofer, and S.~Pozzorini, {\em Phys. Rev. Lett.} {\bf 108}
 F.~Cascioli, S.~HÃ¶che, F.~Krauss, P.~MaierhÃ¶fer, S.~Pozzorini, and
   F.~Siegert, {\em J. Phys. Conf. Ser.} {\bf 523} (2014) 012058.
 
+\bibitem{Ball:2014uwa}
+R.~D. Ball {\em et.~al.},, {\bf NNPDF} Collaboration {\em JHEP} {\bf 04} (2015)
+  040, [\href{http://xxx.lanl.gov/abs/1410.8849}{{\tt 1410.8849}}].
+
 \bibitem{Bellm:2015jjp}
 J.~Bellm {\em et.~al.}, \href{http://xxx.lanl.gov/abs/1512.01178}{{\tt
   1512.01178}}.
@@ -208,5 +212,14 @@ M.~Cacciari, M.~Greco, and P.~Nason, {\em JHEP} {\bf 05} (1998) 007,
 \bibitem{Hamilton:2012np}
 K.~Hamilton, P.~Nason, and G.~Zanderighi, {\em JHEP} {\bf 10} (2012) 155,
   [\href{http://xxx.lanl.gov/abs/1206.3572}{{\tt 1206.3572}}].
+
+\bibitem{Campbell:2010ff}
+J.~M. Campbell and R.~K. Ellis, {\em Nucl. Phys. Proc. Suppl.} {\bf 205-206}
+  (2010) 10--15, [\href{http://xxx.lanl.gov/abs/1007.3492}{{\tt 1007.3492}}].
+
+\bibitem{Caola:2011pz}
+J.~M. Campbell, F.~Caola, F.~Febres~Cordero, L.~Reina, and D.~Wackeroth, {\em
+  Phys. Rev.} {\bf D86} (2012) 034021,
+  [\href{http://xxx.lanl.gov/abs/1107.3714}{{\tt 1107.3714}}].
 
 \end{thebibliography}\endgroup

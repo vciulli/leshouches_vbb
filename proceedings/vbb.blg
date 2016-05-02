@@ -3,10 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: vbb.aux
 The style file: lesHouches.bst
 Database file #1: vbb.bib
-Repeated entry---line 506 of file vbb.bib
- : @article{Catani:2001cc
- :                       ,
-I'm skipping whatever remains of this entry
 Warning--empty title in Maltoni:2012pa
 Warning--empty title in Frixione:2002ik
 Warning--empty title in Nason:2004rx
@@ -25,6 +21,7 @@ Warning--empty title in Catani:1996vz
 Warning--empty title in Catani:2002hc
 Warning--empty title in Cascioli:2011va
 Warning--empty title in Cascioli:2014wya
+Warning--empty title in Ball:2014uwa
 Warning--empty title in Bellm:2015jjp
 Warning--empty title in Bahr:2008pv
 Warning--empty title in Platzer:2011bc
@@ -56,45 +53,47 @@ Warning--empty title in Cullen:2011kv
 Warning--empty title in Collins:1978wz
 Warning--empty title in Cacciari:1998it
 Warning--empty title in Hamilton:2012np
-You've used 49 entries,
+Warning--empty title in Campbell:2010ff
+Warning--empty title in Caola:2011pz
+You've used 52 entries,
             2120 wiz_defined-function locations,
-            844 strings with 11715 characters,
-and the built_in function-call counts, 15662 in all, are:
-= -- 1453
-> -- 560
+            866 strings with 12297 characters,
+and the built_in function-call counts, 16652 in all, are:
+= -- 1547
+> -- 593
 < -- 0
-+ -- 205
-- -- 156
-* -- 1384
-:= -- 2168
-add.period$ -- 51
-call.type$ -- 49
++ -- 217
+- -- 165
+* -- 1471
+:= -- 2301
+add.period$ -- 54
+call.type$ -- 52
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 867
-empty$ -- 1522
-format.name$ -- 156
-if$ -- 4018
+cite$ -- 104
+duplicate$ -- 924
+empty$ -- 1618
+format.name$ -- 165
+if$ -- 4275
 int.to.chr$ -- 0
-int.to.str$ -- 49
-missing$ -- 194
-newline$ -- 150
-num.names$ -- 49
-pop$ -- 222
+int.to.str$ -- 52
+missing$ -- 206
+newline$ -- 159
+num.names$ -- 52
+pop$ -- 235
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 588
+skip$ -- 630
 stack$ -- 0
-substring$ -- 636
-swap$ -- 387
+substring$ -- 674
+swap$ -- 414
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 49
-while$ -- 109
-width$ -- 51
-write$ -- 490
-(There was 1 error message)
+warning$ -- 52
+while$ -- 116
+width$ -- 54
+write$ -- 521
+(There were 52 warnings)
